@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Inter&display=swap');
 table, td {
 	border:1px solid black;
 	border-collapse: collapse;
@@ -9,11 +10,31 @@ body.index {
 	margin:10%;
 	margin-top:0px;
 }
+body.ptero {
+	font-family: 'Inter', sans-serif;
+	margin:15%;
+	margin-top:0px;
+	font-size:30px;
+	line-height:70px;
+	text-indent: 40px;
+}
 h1.index {
 	text-align:center;
 	font-family:Segoe UI Variable Display;
 	font-size:50px;
 	font-weight:normal;
+
+}
+h1.ptero {
+	text-align:center;
+	font-family: 'Courgette', cursive;
+	font-size:70px;
+	font-weight:normal;
+
+}
+p.number {
+	font-size:40px;
+	font-weight:bold;
 
 }
 table.index, td.index{
