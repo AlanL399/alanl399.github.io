@@ -1,0 +1,29 @@
+body {
+	font-size:18px;
+	background-color:#EEE;
+}
+td {
+	background-color:#FFF;
+}
+h1 {
+	font-style:italic;
+	font-size:24px;
+}
+h2 {
+	color:red;
+	font-style:italic;
+	display:inline;
+	font-size:24px;
+}
+h3 {
+	color:red;
+	font-style:italic;
+	display:inline;
+	font-size:18px;
+	font-weight:normal;
+}
+h5 {
+	display:inline;
+	font-size:12px;
+	font-weight:normal;
+}
