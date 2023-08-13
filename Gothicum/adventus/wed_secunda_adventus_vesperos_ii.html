@@ -4,13 +4,19 @@
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<title>WED_SECUNDA_ADVENTUS_VESPEROS_II</title>
 	<link rel="icon" type="image/x-icon" href="../../Favicon.png">
-	<link rel="stylesheet" href="../_gothic_styles.css">
+	<link id="stylesheetLink" rel="stylesheet" href="../_gothic_styles.css">
 </head>
 <body>
 <center>
 <h1 style="font-style:normal;"><b>Gothicum Mockup</b></h1>
-<h3 style="color:black;">Féria Quarta Post Secúndus de Advéntus Dómini</h3>
+<h1 class="black">Féria Quarta Post Secúndus de Advéntus Dómini</h1>
 <h1 style="color:maroon;">Ad Vésperos II</h1>
+<div style="margin: 20px; font-size: 20px !important">
+	<label for="fontSizeSlider">Font Size</label>
+	<input type="range" id="fontSizeSlider" min="10" max="72" value="18" step="1">
+	<button id="resetFontButton">Reset</button>
+</div>
+
 <table border="1" cellpadding="8">
 <colgroup>
 <col style="width: 50%" />
@@ -369,5 +375,11 @@
 </td>
 </tr>
 </table>
+
+<div style="margin-top: 20px;">
+	<button id="toggleStylesheetButton">Toggle Light/Dark</button>
+</div>
+<script type="module" src="../script-sub.js"></script>
+
 <br><a href=../../Gothic.html>Index</a></center>
 </body></html>

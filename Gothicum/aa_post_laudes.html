@@ -4,11 +4,17 @@
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<title>POST LAUDES</title>
 	<link rel="icon" type="image/x-icon" href="../Favicon.png">
-	<link rel="stylesheet" href="_gothic_styles.css">
+	<link id="stylesheetLink" rel="stylesheet" href="_gothic_styles.css">
 </head>
 <body>
 <center>
 <h1 style="font-style:normal;"><b>ANTIPHONAE ET ORATIONES PRO TEMPORE DICENDAE POST LAUDES.</b></h1>
+<div style="margin: 20px; font-size: 20px !important">
+	<label for="fontSizeSlider">Font Size</label>
+	<input type="range" id="fontSizeSlider" min="10" max="72" value="18" step="1">
+	<button id="resetFontButton">Reset</button>
+</div>
+
 <table border="1" cellpadding="8">
 <colgroup>
 <col style="width: 50%" />
@@ -162,6 +168,65 @@
 <br><h3>℟.</h3> Amen.
 </td>
 </tr>
+
+<tr>
+<td valign=top><h2>Ab Sanctíssimæ Trinitátis usque ad Advéntus Dómini.</h2>
+<br><h2>S</h2>alve, Regína Mater Misericórdiae,
+<br>Vita, Dulcédo et Spes nostra, salve:
+<br>Ad Te clamámus exúles Fílii Hevæ:
+<br>Ad Te suspirámus geméntes et flentes
+<br>in lachrymárum Valle.
+<br>
+<br>Eia ergo, Advocáta nostra,
+<br>illos Tuos misericórdes óculos ad nos convérte:
+<br>Et Jesum, benedíctum Fructum Ventris Tui,
+<br>nobis post hoc exílium osténde.
+<br>O Clemens! O Pia! O Dulcis semper Virgo MARÍA!
+<br>
+<br><h3>P.</h3> Ora pro nobis Sancta Dei-Génitrix.
+<br><h3>℟.</h3> Ut digni efficiámur promissiónibus Christi.
+<br>
+<!-- <br><h3>P.</h3> Dignáre, Dómine die isto. -->
+<!-- <br><h3>℟.</h3> Sine peccáto nos custodíre. -->
+<!-- <br> -->
+<br><h3>P.</h3> Dóminus sit semper vobíscum.
+<br><h3>℟.</h3> Et cum spíritu tuo.
+<br>
+<!-- SINE ORATIO -->
+<br><h2>C</h2>oncéde nos, Fámulos tuos, quæsumus Dómine Deus, perpétua mentis et córporis sanitáte gaudére, et Gloriósæ Beátæ MARÍÆ semper Vírginis intercessióne, a præsénti liberári tristítia, et ætérna pérfrui lætítia.
+<br><h2>D</h2>eus, qui inter Apostólicos Sacerdótes Fámulum tuum Francíscum <h5>(Presbýterum Cardinálem)</h5> Pontificáli fecísti dignitáte vígere, præsta quæsumus ut eórum quoque perpétuo aggregétur consórtio.
+<br><h2>E</h2>xáudi, quæsumus, Dómine, súpplicum preces, et confiténtium tibi parce peccátis, ut páriter nobis indulgéntiam tríbuas placátus et pacem. Per Christum Dóminum nostrum.
+<br><h3>℟.</h3> Amen.
+</td>
+
+<td valign=top><h2>From the Most Holy Trinity until the Advent of the Lord.</h2>
+<br><h2>H</h2>ail holy Queen, Mother of Mercy,
+<br>our life, our sweetness, and our hope.
+<br>To thee do we cry, poor banished children of Eve.
+<br>To thee do we send up our sighs, mourning and weeping
+<br>In this valley of tears.
+<br>
+<br>Turn then, most gracious Advocate,
+<br>thine eyes of mercy toward us.
+<br>And after this our exile show unto us
+<br>the blessed fruit of thy womb, Jesus.
+<br>O clement, O loving, O sweet Virgin Mary.
+<br>
+<br><h3>P.</h3> Rejoice and be glad, O Virgin Mary, Alleluia.
+<br><h3>℟.</h3> Because the Lord is truly risen, Alleluia.
+<br>
+<!-- <br><h3>P.</h3> Vouchsafe, O Lord, this day. -->
+<!-- <br><h3>℟.</h3> To keep us without sin. -->
+<!-- <br> -->
+<br><h3>P.</h3> The Lord be always with you.
+<br><h3>℟.</h3> And with thy spirit.
+<br>
+<br><h2>G</h2>rant, we beseech thee, O Lord God, unto all thy servants, that they may continually enjoy soundness both of mind and of body, and by the glorious intercession of the Blessed Mary, always a Virgin, may be delivered from present sadness, and enter into the joy of thine eternal gladness.
+<br><h2>O</h2> God, who made thy servant Francis <h5>(Cardinal Priest)</h5> to flourish with the dignity of the pontifical office among the Apostolic priests, grant, we beseech thee, that he may be forever joined with their company.
+<br><h2>H</h2>ear us, we beseech thee, O Lord, and pardon those who confess their sins to thee, that, being appeased, thou may also grant us forgiveness and peace. Through Christ our Lord.
+<br><h3>℟.</h3> Amen.
+</td>
+</tr>
 </table>
 <h1 style="font-style:normal;"><b>Alia</b></h1>
 <table border="1" cellpadding="8">
@@ -277,5 +342,11 @@
 </td>
 </tr>
 </table>
+
+<div style="margin-top: 20px;">
+	<button id="toggleStylesheetButton">Toggle Light/Dark</button>
+</div>
+<script type="module" src="script.js"></script>
+
 <br><a href=../Gothic.html>Index</a></center>
 </body></html>

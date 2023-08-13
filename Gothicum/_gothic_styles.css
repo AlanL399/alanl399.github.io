@@ -22,8 +22,18 @@ h3 {
 	font-size:18px;
 	font-weight:normal;
 }
+h1.black {
+	color: black;
+	font-style:italic;
+	display:block;
+	font-size:18px;
+	font-weight:normal;
+}
 h5 {
 	display:inline;
 	font-size:12px;
 	font-weight:normal;
+}
+#fontSizeSlider {
+	width: 500px;
 }

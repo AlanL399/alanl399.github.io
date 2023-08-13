@@ -4,13 +4,19 @@
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<title>WED_TERTIA_ADVENTUS_MATUTINUM</title>
 	<link rel="icon" type="image/x-icon" href="../../Favicon.png">
-	<link rel="stylesheet" href="../_gothic_styles.css">
+	<link id="stylesheetLink" rel="stylesheet" href="../_gothic_styles.css">
 </head>
 <body>
 <center>
 <h1 style="font-style:normal;"><b>Gothicum Mockup</b></h1>
-<h3 style="color:black;">Féria Quarta Post Tértio de Advéntus Dómini</h3>
+<h1 class="black">Féria Quarta Post Tértio de Advéntus Dómini</h1>
 <h1 style="color:maroon;">Ad Matutínum</h1>
+<div style="margin: 20px; font-size: 20px !important">
+	<label for="fontSizeSlider">Font Size</label>
+	<input type="range" id="fontSizeSlider" min="10" max="72" value="18" step="1">
+	<button id="resetFontButton">Reset</button>
+</div>
+
 <table border="1" cellpadding="8">
 <colgroup>
 <col style="width: 50%" />
@@ -21,7 +27,7 @@
 </tr>
 <tr>
 <td valign=top><h2>Íncipit</h2>
-<br><h5 style="color:red">Debet semper dici sub silentio, flexisque genibus haec quae sequuntur.</h5>
+<br><h5 style="color:red">Debet semper dici sub silentio, flexisque genibus hæc quæ sequuntur.</h5>
 <br><h2>K</h2>ýrie, eléïson. Christe eléïson. Kýrie eléïson.
 <br><h2>P</h2>ater noster, qui es in cælis, sanctificétur nomen tuum: advéniat regnum tuum: fiat volúntas tua, sicut in cælo et in terra. Panem nostrum quotidiánum da nobis hódie: et dimítte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris: et ne nos indúcas in tentatiónem: sed líbera nos a malo. Amen.
 <br><h2>A</h2>ve María, grátia plena; Dóminus tecum: benedícta tu in muliéribus, et benedíctus fructus ventris tui Jesus. Sancta María, Mater Dei, ora pro nobis peccatóribus, nunc et in hora mortis nostræ. Amen.
@@ -306,7 +312,7 @@ Plead with Christ our sins to spare. <br>
 <!-- No prayer directed, so go to Lauds -->
 </td>
 
-<td valign=top><h2>Responsary</h2> <h5>{From the Season}</h5>
+<td valign=top><h2>Responsory</h2> <h5>{From the Season}</h5>
 <br><h3>P.</h3> The Lord be always with you.
 <br><h3>℟.</h3> And with thy spirit.
 <br>
@@ -330,5 +336,11 @@ Plead with Christ our sins to spare. <br>
 </td>
 </tr>
 </table>
+
+<div style="margin-top: 20px;">
+	<button id="toggleStylesheetButton">Toggle Light/Dark</button>
+</div>
+<script type="module" src="../script-sub.js"></script>
+
 <br><a href=../../Gothic.html>Index</a></center>
 </body></html>

@@ -4,13 +4,19 @@
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<title>AURORA</title>
 	<link rel="icon" type="image/x-icon" href="../Favicon.png">
-	<link rel="stylesheet" href="_gothic_styles.css">
+	<link id="stylesheetLink" rel="stylesheet" href="_gothic_styles.css">
 </head>
 <body>
 <center>
 <h1 style="font-style:normal;"><b>Gothicum Mockup</b></h1>
-<h3 style="color:black;">In Diébus Fériis per Totum Annum</h3>
+<h1 class="black">In Diébus Fériis per Totum Annum</h1>
 <h1 style="color:maroon;">Auróra</h1>
+<div style="margin: 20px; font-size: 20px !important">
+	<label for="fontSizeSlider">Font Size</label>
+	<input type="range" id="fontSizeSlider" min="10" max="72" value="18" step="1">
+	<button id="resetFontButton">Reset</button>
+</div>
+
 <table border="1" cellpadding="8">
 <colgroup>
 <col style="width: 50%" />
@@ -237,8 +243,8 @@ For thy testimonies are my meditation: * and thy justifications my counsel.
 </td>
 </tr>
 
-<tr id="row1">
-<td valign=top><h2 onclick="toggleRows()">Versus, Kýrie, et Pater</h2> <h5>{Pulsáre ad Versándum}</h5>
+<tr class="row1">
+<td valign=top><h2 onclick="togglePsalms()">Versus, Kýrie, et Pater</h2> <h5>{Pulsáre ad Versándum}</h5>
 <!-- Here, our source places the last two verses first, then an apostles creed, then the first verse. -->
 <br><h3>℣.</h3> Exúrge, Dómine, ádjuva nos; et líbera nos propter nomen tuum.
 <br><h3>Vel alius ℣.</h3> A vigília matutína usque ad noctem, Deus sancte, custódi nos.
@@ -263,7 +269,7 @@ For thy testimonies are my meditation: * and thy justifications my counsel.
 <br><h3>℟.</h3> Sed líbera nos a malo.
 </td>
 
-<td valign=top><h2 onclick="toggleRows()">Verse, Kyrie, and the Lord's Prayer</h2> <h5>{Click to Toggle}</h5>
+<td valign=top><h2 onclick="togglePsalms()">Verse, Kyrie, and the Lord's Prayer</h2> <h5>{Click to Toggle}</h5>
 <br><h3>℣.</h3> Arise, O Lord, help us and redeem us for thy name’s sake.
 <br><h3>Or another ℣.</h3> From the morning watch even until night, O holy God, protect us.
 <br><h3>Another ℣.</h3> Thou are our helper and protector, O God, be not slack to save us.
@@ -288,8 +294,8 @@ For thy testimonies are my meditation: * and thy justifications my counsel.
 </td>
 </tr>
 
-<tr id="row2" style="display:none;">
-<td valign=top><h2 onclick="toggleRows()">Versus, Credo, Kýrie, et Pater</h2> <h5>{Pulsáre ad Versándum}</h5>
+<tr class="row2" style="display:none;">
+<td valign=top><h2 onclick="togglePsalms()">Versus, Credo, Kýrie, et Pater</h2> <h5>{Pulsáre ad Versándum}</h5>
 <!-- Here, our source places the last two verses first, then an apostles creed, then the first verse. -->
 <br><h3>P.</h3> A vigília matutína usque ad noctem, Deus sancte, custódi nos.
 <br><h3>℣.</h3> Adjútor, et liberátor noster es tu Dómine, ne tardáveris ad salvándum nos.
@@ -327,7 +333,7 @@ Remissiónem ómnium peccatórum. Carnis huius resurrectiónem et vitam ætérna
 <br><h3>℟.</h3> Sed líbera nos a malo.
 </td>
 
-<td valign=top><h2 onclick="toggleRows()">Verse, Creed, Kyrie, and the Lord's Prayer</h2> <h5>{Click to Toggle}</h5>
+<td valign=top><h2 onclick="togglePsalms()">Verse, Creed, Kyrie, and the Lord's Prayer</h2> <h5>{Click to Toggle}</h5>
 <br><h3>P.</h3> From the morning watch even until night, O holy God, protect us.
 <br><h3>℣.</h3> Thou are our helper and protector, O God, be not slack to save us.
 <br>
@@ -411,19 +417,11 @@ I believe in the Holy Ghost, the holy catholic Church, the forgiveness of all si
 </td>
 </tr>
 </table>
-<script>
-function toggleRows() {
-  var row1 = document.getElementById("row1");
-  var row2 = document.getElementById("row2");
-  
-  if (row1.style.display === "none") {
-    row1.style.display = "table-row";
-    row2.style.display = "none";
-  } else {
-    row1.style.display = "none";
-    row2.style.display = "table-row";
-  }
-}
-</script>
+
+<div style="margin-top: 20px;">
+	<button id="toggleStylesheetButton">Toggle Light/Dark</button>
+</div>
+<script type="module" src="script.js"></script>
+
 <br><a href=../Gothic.html>Index</a></center>
 </body></html>

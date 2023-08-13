@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	background-color: #1A1A1A;
+	color: #E0E0E0;
+}
+td {
+	background-color: #222;
+	color: #EEE;
+	padding: 8px;
+}
+a {
+	color: #FFF;
+	text-decoration: none;
+	transition: color 0.5s;
+}
+a:hover {
+	color: #AA2A2A;
+}
+h1 {
+	font-family: Georgia;
+	font-style: italic;
+	font-size: 30px;
+	color: #FFF;
+}
+h2 {
+	color: #DD3E44;
+	font-style: italic;
+	display: inline;
+	font-size: 24px;
+}
+h3 {
+	color: #DD3E44;
+	font-style: italic;
+	display: inline;
+	font-size: 18px;
+	font-weight: normal;
+}
+h1.black {
+	color: #DD3E44;
+	font-style: italic;
+	display: block;
+	font-size: 18px;
+	font-weight: normal;
+}
+h5 {
+	display: inline;
+	font-size: 12px;
+	font-weight: normal;
+}
+#fontSizeSlider {
+	width: 500px;
+}
