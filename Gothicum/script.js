@@ -73,7 +73,7 @@ toggleStylesheetButton.addEventListener("click", toggleStylesheet);
 resetFontButton.addEventListener("click", resetFontSize);
 
 // Function to toggle psalms display
-function togglePsalms() {
+export function togglePsalms() {
 	rows.forEach((row) => {
 		row.style.display = (row.style.display === "none") ? "table-row" : "none";
 	});

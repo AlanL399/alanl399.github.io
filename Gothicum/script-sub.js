@@ -7,7 +7,7 @@ const bodyElement = document.body;
 const h2Elements = document.querySelectorAll("h2");
 const h3Elements = document.querySelectorAll("h3");
 const h5Elements = document.querySelectorAll("h5");
-const rows = document.querySelectorAll(".row1, .row2");
+// const rows = document.querySelectorAll(".row1, .row2");
 const stylesheetLink = document.getElementById("stylesheetLink");
 const toggleStylesheetButton = document.getElementById("toggleStylesheetButton");
 const resetFontButton = document.getElementById("resetFontButton");
@@ -73,8 +73,8 @@ toggleStylesheetButton.addEventListener("click", toggleStylesheet);
 resetFontButton.addEventListener("click", resetFontSize);
 
 // Function to toggle psalms display
-function togglePsalms() {
-	rows.forEach((row) => {
-		row.style.display = (row.style.display === "none") ? "table-row" : "none";
-	});
-}
+// function togglePsalms() {
+	// rows.forEach((row) => {
+		// row.style.display = (row.style.display === "none") ? "table-row" : "none";
+	// });
+// }
