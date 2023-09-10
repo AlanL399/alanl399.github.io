@@ -12,49 +12,6 @@
 	bottom=1in,
 	bindingoffset=0in
 	}
-% \usepackage{graphicx}
-% \usepackage{titling}
-\usepackage{yfonts}
-% \usepackage{extsizes}%messes with margins
-\usepackage{lettrine}
-\usepackage{multicol}
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\input{Zallman.fd}
-\newcommand*\zallmancaps{\usefont{U}{Zallman}{xl}{n}}
-
-\makeatletter
-\def\leftmarginnote{%
-	\lrmarginnote{\hskip -\marginparsep \hskip -12.25em}}
-
-\def\rightmarginnote{%
-	\lrmarginnote{\hskip\columnwidth \hskip -1em}}
-
-\long\def\lrmarginnote#1#2{%
-\vadjust{#1%
-\smash{\vtop{{%
-		\hsize\marginparwidth
-        \@parboxrestore
-        \@marginparreset
-		\small
-#2}}}}}
-\makeatother
-
-% \usepackage{gregoriotex}%2.5x longer
-\makeatletter
-\DeclareRobustCommand{\Vbar}{\vers@resp{-0.1em}{V}}
-\DeclareRobustCommand{\Rbar}{\vers@resp{0pt}{R}}
-\newcommand{\vers@resp@sym}{\raisebox{0.2ex}{\rotatebox[origin=c]{-20}{$\m@th\rceil$}}}
-\newcommand{\vers@resp}[2]{%
-  {\ooalign{\hidewidth\kern#1\vers@resp@sym\hidewidth\cr#2\cr}}%
-}%
-\makeatother
-
-\def\P{\color{Red} P. \color{black}}
-\def\V{\color{Red} \Vbar . \color{black}}
-\def\R{\color{Red} \Rbar . \color{black}}
-
-
 \begin{document}
 
 
@@ -103,7 +60,7 @@ J A N U A R I U S.\\ \vspace{+.5em}
 & e & \color{Red} vij & 26 & \\
 \color{Red} xvij & f & \color{Red} vj & 27 & \\
 \color{Red} vj & g & \color{Red} v & 28 & Tyrsi martyris. \color{Red} novem lectionum. \\
- & \color{Red} A & \color{Red} iiij & 29 & \\
+ & \color{Red} A & \color{Red} iv & 29 & \\
 \color{Red} xiv & b & \color{Red} iij & 30 & \\
 \color{Red} iij & c & \color{Red} ij & 31 & \\
 \end{tabular}

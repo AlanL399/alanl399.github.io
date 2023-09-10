@@ -12,49 +12,6 @@
 	bottom=1in,
 	bindingoffset=0in
 	}
-% \usepackage{graphicx}
-% \usepackage{titling}
-\usepackage{yfonts}
-% \usepackage{extsizes}%messes with margins
-\usepackage{lettrine}
-\usepackage{multicol}
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\input{Zallman.fd}
-\newcommand*\zallmancaps{\usefont{U}{Zallman}{xl}{n}}
-
-\makeatletter
-\def\leftmarginnote{%
-	\lrmarginnote{\hskip -\marginparsep \hskip -12.25em}}
-
-\def\rightmarginnote{%
-	\lrmarginnote{\hskip\columnwidth \hskip -1em}}
-
-\long\def\lrmarginnote#1#2{%
-\vadjust{#1%
-\smash{\vtop{{%
-		\hsize\marginparwidth
-        \@parboxrestore
-        \@marginparreset
-		\small
-#2}}}}}
-\makeatother
-
-% \usepackage{gregoriotex}%2.5x longer
-\makeatletter
-\DeclareRobustCommand{\Vbar}{\vers@resp{-0.1em}{V}}
-\DeclareRobustCommand{\Rbar}{\vers@resp{0pt}{R}}
-\newcommand{\vers@resp@sym}{\raisebox{0.2ex}{\rotatebox[origin=c]{-20}{$\m@th\rceil$}}}
-\newcommand{\vers@resp}[2]{%
-  {\ooalign{\hidewidth\kern#1\vers@resp@sym\hidewidth\cr#2\cr}}%
-}%
-\makeatother
-
-\def\P{\color{Red} P. \color{black}}
-\def\V{\color{Red} \Vbar . \color{black}}
-\def\R{\color{Red} \Rbar . \color{black}}
-
-
 \begin{document}
 
 
@@ -110,7 +67,7 @@ J A N U A R I U S.\\ \vspace{+.5em}
 \color{Red} xvij & f & \color{Red} vj & 27 & Joannis Chrysostomi Episcopi. \color{Red} novem lectionum. \\
 \color{Red} vj & g & \color{Red} v & 28 & Joannis Presbyteri \& Confessoris. \color{Red} novem lectionum. \color{black} Agnetis. ij. \\
  &  &  &  & \quad \color{Red} novem lectionum. \\
- & \color{Red} A & \color{Red} iiij & 29 & Valerii Episcopi. \color{Red} novem lectionum. \\%Confessoris not in Kalendar but in Breviarium
+ & \color{Red} A & \color{Red} iv & 29 & Valerii Episcopi. \color{Red} novem lectionum. \\%Confessoris not in Kalendar but in Breviarium
 \color{Red} xiv & b & \color{Red} iij & 30 & Sanct\ae \ Matildis Regin\ae . \color{Red} novem lectionum. \color{black} Octava sancti Ildefonsi. \\
  &  &  &  & \quad \color{Red} quatuor capparum. \\
 \color{Red} iij & c & \color{Red} ij & 31 & Sanctorum Cyri et Joannis martyrum. \color{Red} novem lectionum. \\
@@ -300,7 +257,7 @@ dies vero {\color{black} 16.}\\ \vspace{+.5em}
  &  &  &  & \quad martyrum. \color{Red} novem lectionum. \\
 \color{Red} viij & e & \color{Red} iv & 4 & Quiriaci Episcopi \& Martyris. \color{Red} novem lectionum. \\
 \color{Red}  & f & \color{Red} iij & 5 & Conversio Sancti Augustini. \color{Red} novem lectionum. \\
-\color{Red} xvj & g & \color{Red} ij & 6 & \color{Red} Joannis ante Portam Latinam. \color{Red} sex capparum. \\
+\color{Red} xvj & g & \color{Red} ij & 6 & \color{Red} Joannis ante Portam Latinam. \color{black} sex capparum. \\
 \color{Red} v & \color{Red} A & Non. & 7 & Inventio Clavorum Dominicorum. \color{Red} sex capparum. \color{black} Sanct\ae \ Trepet\ae \ Virginis. \\%tripete
  &  &  &  & \quad \color{Red} novem lectionum. \color{black} Domicill\ae \ virginis. \color{Red} novem lectionum. \\
 \color{Red}  & b & \color{Red} viij & 8 & Revelatio Michaelis. \color{Red} sex capparum. \color{black} Isidori militis. \color{Red} novem lectionum. \\
@@ -573,7 +530,7 @@ dies vero {\color{black} 10.}\\ \vspace{+.5em}
 \color{Red} xvj & \color{Red} A & \color{Red} Kal. & 1 & Germani, Remigii \& Vedasti Episcopi. \color{Red} novem lectionum. \\
 \color{Red} v & b & \color{Red} vj & 2 & Leodegarii Episcopi \& Martyris. \color{Red} novem lectionum. \\
 \color{Red} xiij & c & \color{Red} v & 3 & \\
-\color{Red} ij & d & \color{Red} iv & 4 & \color{Red} Francisci Confessoris. \color{Red} sex capparum. \\
+\color{Red} ij & d & \color{Red} iv & 4 & \color{Red} Francisci Confessoris. \color{black} sex capparum. \\
 \color{Red}  & e & \color{Red} iij & 5 & \\
 \color{Red} x & f & \color{Red} ij & 6 & Fidis virginis. \color{Red} novem lectionum. \\
 \color{Red}  & g & Non. & 7 & Lini Episcopi \& Martyris. \color{Red} novem lectionum. \color{black} Marcii Pap\ae \ \& Confessoris. \\
