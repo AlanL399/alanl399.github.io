@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSS Images</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .folder {
+            margin-bottom: 20px;
+        }
+        .thumbnail {
+            margin: 5px;
+        }
+        .thumbnail img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+<p><a href="#thing">Jump to MS 609</a></p>
+    <div class="folder">
+        <h2>MS 2668</h2>
+        <div id="image-container-2668"></div>
+    </div>
+
+    <div class="folder">
+        <h2 id=thing>MS 609</h2>
+        <div id="image-container-609"></div>
+    </div>
+
+    <script>
+        function displayImages(folderPath, containerId) {
+            const imageContainer = document.getElementById(containerId);
+
+            fetch(`${folderPath}/images.json`)
+                .then(response => response.json())
+                .then(images => {
+                    images.forEach(image => {
+                        const imgElement = document.createElement("img");
+                        imgElement.src = `${folderPath}/${image}`;
+                        imgElement.alt = image;
+
+                        const thumbnailDiv = document.createElement("div");
+                        thumbnailDiv.classList.add("thumbnail");
+                        thumbnailDiv.appendChild(imgElement);
+
+                        imageContainer.appendChild(thumbnailDiv);
+                    });
+                })
+                .catch(error => console.error(`Error fetching images from ${folderPath}:`, error));
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            // Display images from Folder 2668
+            displayImages('2668', 'image-container-2668');
+
+            // Display images from Folder 609
+            displayImages('609', 'image-container-609');
+        });
+    </script>
+</body>
+</html>
