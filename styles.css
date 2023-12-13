@@ -68,7 +68,7 @@ li { /* list item */
 	text-align:center;
 	float:left;
 }
-li a {
+li a, .dropbtn {
 	display: inline-block;
 	text-align: center;
 	padding:16px;
@@ -76,12 +76,29 @@ li a {
 li:hover {
 	background-color: green;
 }
-li a:hover, .dropdown:hover {
+li a:hover, .dropdown:hover .dropbtn {
 	background-color: red;
 	display: block;
 }
 li.dropdown {
 	display: inline-block;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: pink;
+	min-width: 160px;
+	box-shadow: 10px 8px 16px 05px rgba(0,0,0,.5);
+	z-index: 1;   /* stack order */
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+.dropdown-content a {
+	color: black;
+	padding: 14px 16px;
+	display: block;
+	text-align: left;
 }
 td a {
 	/* color: black; */
