@@ -13,6 +13,7 @@ const toggleStylesheetButton = document.getElementById("toggleStylesheetButton")
 const resetFontButton = document.getElementById("resetFontButton");
 const lightStylesheet = "_gothic_styles.css";
 const darkStylesheet = "_gothic_styles_dark.css";
+const cardsStylesheet = "_gothic_styles_cards.css";
 
 // Function to apply the font size
 function applyFontSize(size) {
@@ -28,6 +29,19 @@ function applyFontSize(size) {
 		h5.style.fontSize = `${12 + 2 * scaleFactor}px`;
 	});
 }
+// function applyFontSize(size) {
+	// const scaleFactor = parseFloat(size) / 18; // Convert to em units
+	// bodyElement.style.fontSize = `${size}px`;
+	// h3Elements.forEach((h3) => {
+		// h3.style.fontSize = `${size}px`;
+	// });
+	// h2Elements.forEach((h2) => {
+		// h2.style.fontSize = `${.333 + scaleFactor}em`;
+	// });
+	// h5Elements.forEach((h5) => {
+		// h5.style.fontSize = `${-.333 + scaleFactor}em`;
+	// });
+// }
 
 // Function to handle slider input
 function handleSliderInput() {
@@ -51,20 +65,29 @@ if (storedFontSize) {
 	applyFontSize(storedFontSize);
 }
 
+const stylesheets = [lightStylesheet, darkStylesheet, cardsStylesheet];
+let currentIndex = stylesheets.indexOf(stylesheetLink.href);
+
 function toggleStylesheet() {
-  const activeStylesheet = stylesheetLink.href.includes(lightStylesheet) ? darkStylesheet : lightStylesheet;
-  setStylesheet(activeStylesheet);
+	currentIndex = (currentIndex + 1) % stylesheets.length;
+	const activeStylesheet = stylesheets[currentIndex];
+	setStylesheet(activeStylesheet);
 }
+
+// function toggleStylesheet() {
+	// const activeStylesheet = stylesheetLink.href.includes(lightStylesheet) ? darkStylesheet : lightStylesheet;
+	// setStylesheet(activeStylesheet);
+// }
 
 // Function to set the active stylesheet and store it in a cookie for 1 year
 function setStylesheet(stylesheet) {
-  stylesheetLink.href = "../" + stylesheet;
-  setCookie("activeStylesheetVariable", stylesheet, 365);
+	stylesheetLink.href = "../" + stylesheet;
+	setCookie("activeStylesheetVariable", stylesheet, 365);
 }
 
 // Check if the active stylesheet variable is stored in a cookie and apply it
-if (getCookie("activeStylesheetVariable") === lightStylesheet || getCookie("activeStylesheetVariable") === darkStylesheet) {
-  setStylesheet(getCookie("activeStylesheetVariable"));
+if (getCookie("activeStylesheetVariable") === lightStylesheet || getCookie("activeStylesheetVariable") === darkStylesheet || getCookie("activeStylesheetVariable") === cardsStylesheet) {
+	setStylesheet(getCookie("activeStylesheetVariable"));
 }
 
 // Event listeners

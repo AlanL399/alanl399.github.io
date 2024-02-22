@@ -1,0 +1,87 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap'); */
+body {
+	font-family: 'Helvetica Neue', sans-serif;
+	/* font-family: 'Poppins', sans-serif; */
+	/* font-family: 'Montserrat', sans-serif; */
+	font-size: 1.25em;
+	/* background-color: #F8F8F8; */
+	background: radial-gradient(#76A9ff,#CFC,#EEE);
+	color: #000;
+}
+
+table {
+	border: 0em;
+	border-spacing: 1.5em;
+	margin: 0em;
+	/* width: 90%; */
+}
+
+td {
+	background: linear-gradient(45deg, #FF9933, #FF6F61);
+	color: #FFF;
+	padding: 1.25em;
+	border-radius: 1.75em;
+	border: 0em;
+	box-shadow: .7em .5em 1em .35em rgba(0,0,0,.2);
+	/* horizontal vertical blur spread color inset/outset */
+}
+
+td a {
+	color: #FFF;
+	text-decoration: none;
+	transition: color 0.5s;
+}
+
+a {
+	color: Maroon;
+	text-decoration: underline;
+	transition: color 0.5s;
+}
+
+a:hover {
+	color: #000;
+}
+
+h1 {
+	color: #000;
+	font-style: italic;
+	font-size: 2.25em;
+	font-weight: normal;
+	margin: .1em;
+}
+
+h1.black {
+	color: #000;
+	font-style: italic;
+	display: inline;
+	font-weight: normal;
+	font-size: 2em;
+}
+
+h2 {
+	color: #FFF;
+	display: inline;
+	font-weight: normal;
+	font-size: 1.8em;
+}
+
+h3 {
+	color: Maroon;
+	display: inline;
+	font-weight: normal;
+	/* font-style: italic; */
+	font-size: 1em;
+}
+
+h5 {
+	color: Maroon;
+	display: inline;
+	font-weight: normal;
+	font-size: .75em;
+}
+
+#fontSizeSlider {
+	width: 31.25em;
+}
