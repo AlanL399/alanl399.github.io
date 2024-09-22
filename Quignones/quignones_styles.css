@@ -1,0 +1,359 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;700&display=swap');
+body {
+	/* font-family: 'Segoe UI', sans-serif; */
+	font-family: 'Helvetica Neue', sans-serif;
+	/* font-family: 'Poppins', sans-serif; */
+	/* font-family: 'Montserrat', sans-serif; */
+	font-size: 1.25em;
+	color: #FFF;
+	/* background: radial-gradient(#76A9ff,#CFC,#EEE); */
+	background: linear-gradient(#76A9FF,#000,#8D2FA2,#00D4FF,#76A9FF,#00D4FF,#8D2FA2);
+	/* Inner to Outer */
+	
+	/* background: linear-gradient(18deg, #000000, #00D4FF); */ /* Embedded style
+	/* background: linear-gradient(0deg, #FFFFFF, #00D4FF); */ /* Windows Live */
+	/* background: linear-gradient(0deg, rgba(255,255,255,1) 78%, rgba(0,212,255,1) 100%); */
+	/* Windows Live, more white */
+	/* color: #000; */
+	
+	text-shadow: 2px 2px 5px rgba(0,0,0,.8);
+
+	/* background-image: url(aero/cell.jpg); */
+	/* This makes the image cover the entire background */
+	/* background-size: cover; */
+	/* This centers the image */
+	/* background-position: center; */
+	/* This prevents the image from repeating */
+	/* background-repeat: no-repeat; */
+}
+
+table {
+	border: 0em;
+	/* border-spacing: 1.5em; */
+	border-spacing: 1em;
+	margin: 0em;
+	width: 90%;
+}
+
+td {
+	/* background: linear-gradient(45deg, #FF9933, #FF6F61); */
+	/* color: #FFF; */
+	padding: .5em 1.25em;
+	border-radius: 1em;
+	/* border: 0em; */
+	/* box-shadow: .7em .5em 1em .35em rgba(0,0,0,.2); */
+	/* horizontal vertical blur spread color inset/outset */
+
+	
+
+	background: rgba(255, 255, 255, 0.05); /* Semi-transparent background */
+
+	box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.2),
+				/* Inner glow */
+				inset 2px 2px 8px rgba(255, 255, 255, 0.1); /* Slight drop shadow */
+	backdrop-filter: blur(10px); /* Blurred background effect */
+	border: 2px solid rgba(255, 255, 255, 0.5); /* Border with transparency */
+	position: relative; /* Needed for pseudo-element positioning */
+	overflow: hidden; /* Ensure children stay within the container */
+	/* width: 50%; */
+	/* Width set to 80% of the parent */
+	/* padding: 20px; */
+	/* Space inside the element */
+	/* margin: 40px auto; */
+	/* Space around the element */
+	/* display: block; */
+}
+
+td::before {
+	content: ''; /* Empty pseudo-element */
+	position: absolute; /* Positioned relative to the parent */
+	top: 0px;
+	/* top: -50px; */
+	bottom: 0px;
+	/* bottom: -50px; */
+	/* left: 0px; */
+	left: -80px;
+	/* right: 0px; */
+	right: 0px;
+	background: linear-gradient(-45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.0)); /* Gradient effect for shine */
+	opacity: 0.6; /* Slight transparency */
+	transform: rotate(45deg); /* Rotate the gradient for a diagonal shine */
+	pointer-events: none; /* Prevent interactions with this pseudo-element */
+	/* width: 100%; */
+}
+
+td a {
+	color: #FFF;
+	text-decoration: none;
+	transition: color 0.5s;
+}
+
+a {
+	/* color: Maroon; */
+	color: White;
+	text-decoration: underline;
+	/* transition: color 0.5s; */
+}
+
+a:hover {
+	/* color: #000; */
+}
+
+h1 {
+	color: #FFF;
+	font-style: italic;
+	font-size: 2.25em;
+	font-weight: normal;
+	margin: .1em;
+}
+
+h1.black {
+	color: #000;
+	font-style: italic;
+	display: inline;
+	font-weight: normal;
+	font-size: 2em;
+}
+
+h2 {
+	/* color: #FFF; */
+	display: inline;
+	font-weight: bold;
+	font-size: 1.8em;
+	font-style: italic;
+}
+
+h3 {
+	/* color: Maroon; */
+	display: inline;
+	font-weight: normal;
+	font-style: italic;
+	font-size: 1em;
+}
+
+h5 {
+	/* color: Maroon; */
+	display: inline;
+	font-weight: normal;
+	font-size: .75em;
+}
+
+#fontSizeSlider {
+	width: 31.25em;
+}
+
+.container {
+	display: flex; /* Flexbox used for alignment */
+	justify-content: center; /* Center horizontally */
+	align-items: center; /* Center vertically */
+	height: 100%; /* Full height container */
+	padding: 80px; /* Space around the content */
+}
+
+.glass-button {
+	/* font-family: "Lato", sans-serif; */
+	/* padding: 30px 40px; */
+	padding: .5em 1em;
+	/* font-size: 60px; */
+	color: #FFFFFF; /* text color */
+	/* background: linear-gradient(145deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.1)); */
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(10px); /* Adds a blurred background effect */
+	border: 2px solid rgba(0, 255, 0, .3);
+	border-radius: 20px; /* Rounded corners */
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+	cursor: pointer; /* Changes cursor to pointer on hover */
+	position: relative; /* Required for absolute positioning of pseudo-elements */
+	overflow: hidden; /* Ensures contents stay within the boundaries */
+	
+    will-change: transform, box-shadow; /* Inform browser of potential changes */
+
+	/* Transitions for hover-in and hover-out (apply to base class) */
+	/* Control speed of hover in/out */
+	transition: all 1.0s ease; /* Smooth transition effect for all properties */
+	/* transition: background 1.6s ease, transform 1.6s ease, opacity 1.6s ease; */
+
+	/* Box-shadow for outer glow and inner shine */
+	/* Outer glow */
+	box-shadow: 0 6px 20px rgba(0, 0, 255, 0.4),
+				/* Inner glow */
+				inset 2px 2px 8px rgba(255, 255, 255, 0.9); /* Soft inner glow, 0 is horizontal offset, then vertival, then blur radius */
+}
+
+.glass-button::before {
+	content: ''; /* Empty content for the pseudo-element */
+	position: absolute; /* Positioned relative to the parent */
+	top: 0;
+	left: 0;
+	width: 100%; /* Full width */
+	height: 50%; /* Half height */
+	background: rgba(255, 255, 255, 0.5); /* Semi-transparent overlay */
+}
+
+.glass-button:hover {
+	/* transform: scale(1.05); */ /* Scale button smoothly on hover */
+	/* background: linear-gradient(145deg, rgba(255, 255, 0, 0.8), rgba(255, 255, 255, 0.9));  */
+	background: rgba(255, 0, 0, 0.8); /* Change background color on hover */
+	box-shadow: 0 6px 20px rgba(0, 255, 255, 0.4),
+				/* Inner glow */
+				inset 6px 6px 10px rgba(255, 255, 255, 0.9); /* Larger inner glow */
+	opacity: 0.8; /* Add opacity change for hover effect */
+}
+
+.glass-button:active {
+	/* transform: scale(1.0); */
+	color: #AAA;
+	background: rgba(160, 0, 0, 0.9);
+	box-shadow: 0 6px 20px rgba(0, 255, 255, 0.9),
+				/* inset 5px 6px 10px rgba(255, 255, 255, 0.9); */
+				inset 5px 6px 10px rgba(0, 0, 0, 0.9);
+				/* Inset shadow when clicked */
+	transition: none;
+}
+
+
+
+.sidebar {
+	/* height: 100%; */ /* Full height of the screen */
+	width: 0;
+	/* Start with width of 0 (for sliding effect) */
+	position: fixed;
+	/* Fixed positioning to stay in place */
+	z-index: 1; /* Ensure it's on top of other content */
+	/* top: 10px; */
+	/* left: 15px; */
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/* background-color: #111; */
+	/* Dark background */
+	overflow-x: hidden; /* Hide any overflowing content horizontally */
+	transition: 0.5s; /* Smooth transition when opening/closing */
+	padding-top: 60px; /* Padding from the top */
+	
+	
+
+	background: rgba(0, 0, 0, 0.15); /* Semi-transparent background */
+
+	box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.2),
+				/* Inner glow */
+				inset 2px 2px 8px rgba(255, 255, 255, 0.1); /* Slight drop shadow */
+	backdrop-filter: blur(10px); /* Blurred background effect */
+	/* border: 2px solid rgba(255, 255, 255, 0.5); */
+	/* Border with transparency */
+	/* padding: .5em 1.25em; */
+	border-radius: 1em;
+
+}
+
+.sidebar a {
+	padding: 8px 8px 8px 32px;
+	/* Space inside links */
+	text-decoration: none;
+	font-size: 25px;
+	text-shadow: 2px 2px 5px #000;
+	/* color: #818181; */
+	/* Light gray color */
+	display: block;
+	/* Ensure links stack vertically */
+	transition: 0.3s;
+	/* Smooth color transition on hover */
+}
+
+.sidebar a:hover {
+	color: #f1f1f1; /* Lighter color on hover */
+}
+
+.sidebar .closebtn {
+	position: absolute; /* Positioned inside the sidebar */
+	top: 0;
+	right: 25px;
+	/* Positioned 25px from the right */
+	font-size: 36px;
+	/* Larger close button */
+	/* margin-left: 50px; */
+}
+
+.openbtn {
+	font-size: 20px;
+	cursor: pointer; /* Pointer cursor on hover */
+	/* background-color: #111; */
+	/* Dark background */
+	/* color: white; */
+	padding: 15px;
+	/* padding: 10px 15px; */
+	/* Padding inside the button */
+	/* border: none; */
+	/* No border */
+	position: fixed; /* Fixed position in the viewport */
+	top: 10px; /* Positioned 10px from the top */
+	left: 15px; /* Positioned 10px from the left */
+	z-index: 2; /* Ensure it appears above other content */
+	
+	/* font-family: "Lato", sans-serif; */
+	/* padding: 30px 40px; */
+	/* padding: .5em 1em; */
+	/* font-size: 60px; */
+	color: #FFFFFF; /* text color */
+	text-shadow: 2px 2px 5px #000;
+	background: rgba(20, 255, 20, 0.3);
+	backdrop-filter: blur(5px);
+	Adds a blurred background effect
+	border: 0px solid rgba(0, 255, 0, .3);
+	border-radius: 20px;
+	/* Rounded corners */
+	/* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9); */
+
+
+	overflow: hidden; /* Ensures contents stay within the boundaries */
+	
+    /* will-change: transform, box-shadow; */
+	/* Inform browser of potential changes */
+
+	/* Transitions for hover-in and hover-out (apply to base class) */
+	/* Control speed of hover in/out */
+	transition: all 1.0s ease;
+	/* Smooth transition effect for all properties */
+	/* transition: background 1.6s ease, transform 1.6s ease, opacity 1.6s ease; */
+
+	/* Box-shadow for outer glow and inner shine */
+	/* Outer glow */
+	box-shadow: 0 6px 20px rgba(0, 0, 255, 0.4),
+				/* Inner glow */
+				inset 2px 2px 8px rgba(255, 255, 255, 0.9);
+				/* Soft inner glow, 0 is horizontal offset, then vertival, then blur radius */
+}
+
+.openbtn::before {
+	content: ''; /* Empty content for the pseudo-element */
+	position: absolute; /* Positioned relative to the parent */
+	top: 0;
+	left: 0;
+	width: 100%; /* Full width */
+	height: 50%; /* Half height */
+	background: rgba(255, 255, 255, 0.5); /* Semi-transparent overlay */
+}
+
+.openbtn:hover {
+	/* transform: scale(1.05); */ /* Scale button smoothly on hover */
+	/* background: linear-gradient(145deg, rgba(255, 255, 0, 0.8), rgba(255, 255, 255, 0.9));  */
+	background: rgba(255, 0, 0, 0.8); /* Change background color on hover */
+	box-shadow: 0 6px 20px rgba(0, 255, 255, 0.4),
+				/* Inner glow */
+				inset 6px 6px 10px rgba(255, 255, 255, 0.9); /* Larger inner glow */
+	opacity: 0.8;
+	/* Add opacity change for hover effect */
+}
+
+.openbtn:active {
+	/* transform: scale(1.0); */
+	color: #AAA;
+	background: rgba(160, 0, 0, 0.9);
+	box-shadow: 0 6px 20px rgba(0, 255, 255, 0.9),
+				/* inset 5px 6px 10px rgba(255, 255, 255, 0.9); */
+				inset 5px 6px 10px rgba(0, 0, 0, 0.9);
+				/* Inset shadow when clicked */
+	transition: none;
+}
+

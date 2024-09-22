@@ -1,0 +1,1429 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>Quignones Online</title>
+	<link rel="icon" type="image/x-icon" href="../Favicon.png">
+	<link id="stylesheetLink" rel="stylesheet" href="quignones_styles.css">
+</head>
+<body>
+<center>
+<h1 style="font-style:normal;"><b>Quignones Online</b></h1>
+<h2>Mockup Only</h2>
+
+<div style="margin: 20px; font-size: 20px !important">
+	<label for="fontSizeSlider">Font Size</label>
+	<input type="range" id="fontSizeSlider" min="10" max="72" value="18" step="1">
+	<button id="resetFontButton" class="glass-button">Reset</button>
+</div>
+
+<h3 style="color: white">Select a Date</h3>
+<input type="date" id="datePicker" onchange="loadData()" class="glass-button">
+
+
+<div id="mySidebar" class="sidebar">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+	<a href="#matins">Ad Matutinum</a>
+	<a href="#lauds">Ad Laudes</a>
+	<a href="#prime">Ad Primam</a>
+	<a href="#terce">Ad Tertiam</a>
+	<a href="#sext">Ad Sextam</a>
+	<a href="#none">Ad Nonam</a>
+	<a href="#vespers">Ad Vesperas</a>
+	<a href="#compline">Ad Completorium</a>
+</div>
+
+<br><button class="openbtn" id="openbtn" onclick="openNav()">☰ Navigation</button>  
+
+
+
+<br><h2 id="matins">Ad Matutinum</h2>
+
+<table border="1" cellpadding="8">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+
+<tr>
+<td valign=top><h2>Incipit</h2>
+<!-- FIXED -->
+<br><h2>P</h2>ater
+<br><h2>A</h2>ve María
+<br><h2>C</h2>onfíteor
+<br><h2>M</h2>isereátur
+<br><h2>I</h2>ndulgéntium
+<br><h2>D</h2>ómine labia
+<br><h2>D</h2>eus in adjutórium
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="alleluia">
+<!-- CHANGE IN LENT -->
+<td valign=top><h2>A</h2>lleluia.
+</td>
+
+<td valign=top><h2>A</h2>lleluia.
+</td>
+</tr>
+
+
+<tr class="invitatory">
+<td valign=top><h2>Invitatórium</h2>
+<br><h2>A</h2>NTIPHONA
+<br><h3>Si uno, semel dícitur. Si a duóbus, replicátur.</h3>
+</td>
+
+<td valign=top><h2></h2>
+<br><h3></h3>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="">
+<td valign=top>
+<h2>V</h2>eníte, exultemus
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top>
+<h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="invitatory">
+<td valign=top>
+<h3>Repétitur Invitatórium</h3>
+<br><h2>A</h2>NTIPHONA
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="matins-hymn">
+<td valign=top><h2>Hymnus</h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="matins-antiphon">
+<!-- PROPER, NEED TO SEMIDOUBLE IF NEEDED -->
+<td valign=top>
+<h2>A</h2>NTIPHONA
+</td>
+
+<td valign=top>
+<h2></h2>
+</td>
+</tr>
+
+
+<tr class="matins-psalm-one">
+<td valign=top><h2>B</h2>eatus
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="matins-psalm-two">
+<td valign=top><h2>Q</h2>uare
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="matins-psalm-three">
+<td valign=top><h2>D</h2>ómine quid
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="matins-antiphon">
+<!-- PROPER -->
+<td valign=top>
+<h2>A</h2>NTIPHONA
+</td>
+
+<td valign=top>
+<h2></h2>
+</td>
+</tr>
+
+
+<tr class="matins-lesson-one">
+<td valign=top><h2>Lectio Prima</h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="matins-lesson-two">
+<td valign=top><h2>Lectio Secunda</h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="matins-lesson-three">
+<td valign=top><h2>Lectio Tertia</h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="tedeum">
+<!-- CONTROLS TE DEUM; ON FOR FEASTS -->
+<td valign=top><h2>T</h2>e Deum
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+</table>
+
+<br><h2 id="lauds">Ad Laudes</h2>
+
+<table border="1" cellpadding="8">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+
+
+<tr>
+<td valign=top><h2>Incipit</h2>
+<!-- FIXED -->
+<br><h2>D</h2>eus in adjutórium
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="alleluia">
+<!-- CHANGE IN LENT -->
+<td valign=top><h2>A</h2>lleluia.
+</td>
+
+<td valign=top><h2>A</h2>lleluia.
+</td>
+</tr>
+
+
+<tr class="lauds-antiphon">
+<!-- PROPER, NEED TO SEMIDOUBLE IF NEEDED -->
+<td valign=top><h2>A</h2>NTIPHONA
+</td>
+
+<td valign=top><h2></h2>
+</td>
+</tr>
+
+
+<tr class="lauds-psalm-one">
+<td valign=top><h2>Q</h2>uare
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+
+<tr class="lauds-psalm-two">
+<td valign=top><h2>Q</h2>uare
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+
+<tr class="lauds-psalm-three">
+<td valign=top><h2>Q</h2>uare
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+
+<tr class="benedictus">
+<td valign=top><h2>B</h2>enedictus Dominus
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<tr class="lauds-antiphon">
+<!-- PROPER -->
+<td valign=top><h2>A</h2>NTIPHONA
+</td>
+
+<td valign=top><h2></h2>
+</td>
+</tr>
+
+
+<tr class="oratio">
+<!-- PROPER -->
+<td valign=top><h2>Oratio</h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="final-antiphon">
+<!-- PROPER TO SEASON -->
+<td valign=top><h2>S</h2>ub tuum
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+</table>
+
+<br><h2 id="prime">Ad Primam</h2>
+
+<table border="1" cellpadding="8">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+
+
+<tr>
+<td valign=top><h2>Incipit</h2>
+<!-- FIXED -->
+<br><h2>P</h2>ater noster
+<br><h2>A</h2>ve María
+<br><h2>D</h2>eus in adjutórium
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="alleluia">
+<!-- CHANGE IN LENT -->
+<td valign=top><h2>A</h2>lleluia.
+</td>
+
+<td valign=top><h2>A</h2>lleluia.
+</td>
+</tr>
+
+
+<tr class="prime-hymn">
+<!-- NOT IN TRIDUUM -->
+<td valign=top><h2>J</h2>am lucis
+</td>
+
+<td valign=top><h2>A</h2>
+</td>
+</tr>
+
+
+<tr class="prime-antiphon">
+<!-- CHANGE DAILY, AS IN PSALTER, ALWAYS SEMIDOUBLED -->
+<td valign=top><h2>A</h2>NTIPHONA
+</td>
+
+<td valign=top><h2></h2>
+</td>
+</tr>
+
+
+<tr class="prime-psalm-one">
+<td valign=top><h2>Q</h2>uare
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="prime-psalm-two">
+<td valign=top><h2>Q</h2>uare
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="prime-psalm-three">
+<td valign=top><h2>Q</h2>uare
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="symbol">
+<!-- Quicumque on Sunday, Credo Apostolorum else -->
+<td valign=top><h2>Q</h2>uicumque vult
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="prime-antiphon">
+<!-- CHANGE DAILY, AS IN PSALTER -->
+<td valign=top><h2>A</h2>NTIPHONA
+</td>
+
+<td valign=top><h2></h2>
+</td>
+</tr>
+
+
+<tr class="prime-oratio">
+<td valign=top><h2>Oratio</h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="commemoratio">
+<!-- IF SIMPLEX IS IMPEDED -->
+<td valign=top><h2>Commemoratio</h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="">
+<!-- FIXED -->
+<td valign=top><h2>Capitulii</h2>
+<br><h2>P</h2>retiosa
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+</table>
+
+<br><h2 id="terce">Ad Tertiam</h2>
+
+<table border="1" cellpadding="8">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+
+
+<tr>
+<td valign=top><h2>Incipit</h2>
+<!-- FIXED -->
+<br><h2>P</h2>ater noster
+<br><h2>A</h2>ve María
+<br><h2>D</h2>eus in adjutórium
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="alleluia">
+<!-- CHANGE IN LENT -->
+<td valign=top><h2>A</h2>lleluia.
+</td>
+
+<td valign=top><h2>A</h2>lleluia.
+</td>
+</tr>
+
+
+<tr class="terce-hymn">
+<!-- NOT IN TRIDUUM -->
+<td valign=top><h2>J</h2>am lucis
+</td>
+
+<td valign=top><h2>A</h2>
+</td>
+</tr>
+
+
+<tr class="terce-antiphon">
+<!-- CHANGE DAILY, AS IN PSALTER, ALWAYS SEMIDOUBLED -->
+<td valign=top><h2>A</h2>NTIPHONA
+</td>
+
+<td valign=top><h2></h2>
+</td>
+</tr>
+
+
+<tr class="terce-psalm-one">
+<td valign=top><h2>Q</h2>uare
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="terce-psalm-two">
+<td valign=top><h2>Q</h2>uare
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="terce-psalm-three">
+<td valign=top><h2>Q</h2>uare
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="terce-antiphon">
+<!-- CHANGE DAILY, AS IN PSALTER -->
+<td valign=top><h2>A</h2>NTIPHONA
+</td>
+
+<td valign=top><h2></h2>
+</td>
+</tr>
+
+
+<tr class="oratio">
+<td valign=top><h2>Oratio</h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+</table>
+
+<br><h2 id="sext">Ad Sextam</h2>
+
+<table border="1" cellpadding="8">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+
+
+<tr>
+<td valign=top><h2>Incipit</h2>
+<!-- FIXED -->
+<br><h2>P</h2>ater noster
+<br><h2>A</h2>ve María
+<br><h2>D</h2>eus in adjutórium
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="alleluia">
+<!-- CHANGE IN LENT -->
+<td valign=top><h2>A</h2>lleluia.
+</td>
+
+<td valign=top><h2>A</h2>lleluia.
+</td>
+</tr>
+
+
+<tr class="sext-hymn">
+<!-- NOT IN TRIDUUM -->
+<td valign=top><h2>J</h2>am lucis
+</td>
+
+<td valign=top><h2>A</h2>
+</td>
+</tr>
+
+
+<tr class="sext-antiphon">
+<!-- CHANGE DAILY, AS IN PSALTER, ALWAYS SEMIDOUBLED -->
+<td valign=top><h2>A</h2>NTIPHONA
+</td>
+
+<td valign=top><h2></h2>
+</td>
+</tr>
+
+
+<tr class="sext-psalm-one">
+<td valign=top><h2>Q</h2>uare
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="sext-psalm-two">
+<td valign=top><h2>Q</h2>uare
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="sext-psalm-three">
+<td valign=top><h2>Q</h2>uare
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="sext-antiphon">
+<!-- CHANGE DAILY, AS IN PSALTER -->
+<td valign=top><h2>A</h2>NTIPHONA
+</td>
+
+<td valign=top><h2></h2>
+</td>
+</tr>
+
+
+<tr class="oratio">
+<td valign=top><h2>Oratio</h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+</table>
+
+<br><h2 id="none">Ad Nonam</h2>
+
+<table border="1" cellpadding="8">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+
+
+<tr>
+<td valign=top><h2>Incipit</h2>
+<!-- FIXED -->
+<br><h2>P</h2>ater noster
+<br><h2>A</h2>ve María
+<br><h2>D</h2>eus in adjutórium
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="alleluia">
+<!-- CHANGE IN LENT -->
+<td valign=top><h2>A</h2>lleluia.
+</td>
+
+<td valign=top><h2>A</h2>lleluia.
+</td>
+</tr>
+
+
+<tr class="none-hymn">
+<!-- NOT IN TRIDUUM -->
+<td valign=top><h2>J</h2>am lucis
+</td>
+
+<td valign=top><h2>A</h2>
+</td>
+</tr>
+
+
+<tr class="none-antiphon">
+<!-- CHANGE DAILY, AS IN PSALTER, ALWAYS SEMIDOUBLED -->
+<td valign=top><h2>A</h2>NTIPHONA
+</td>
+
+<td valign=top><h2></h2>
+</td>
+</tr>
+
+
+<tr class="none-psalm-one">
+<td valign=top><h2>Q</h2>uare
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="none-psalm-two">
+<td valign=top><h2>Q</h2>uare
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="none-psalm-three">
+<td valign=top><h2>Q</h2>uare
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="none-antiphon">
+<!-- CHANGE DAILY, AS IN PSALTER -->
+<td valign=top><h2>A</h2>NTIPHONA
+</td>
+
+<td valign=top><h2></h2>
+</td>
+</tr>
+
+
+<tr class="oratio">
+<td valign=top><h2>Oratio</h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+</table>
+
+<br><h2 id="vespers">Ad Vesperas</h2>
+
+<table border="1" cellpadding="8">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+
+
+<tr>
+<td valign=top><h2>Incipit</h2>
+<!-- FIXED -->
+<br><h2>P</h2>ater noster
+<br><h2>A</h2>ve María
+<br><h2>D</h2>eus in adjutórium
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="alleluia">
+<!-- CHANGE IN LENT -->
+<td valign=top><h2>A</h2>lleluia.
+</td>
+
+<td valign=top><h2>A</h2>lleluia.
+</td>
+</tr>
+
+
+<tr class="vespers-hymn">
+<!-- PROPER -->
+<td valign=top><h2>J</h2>am lucis
+</td>
+
+<td valign=top><h2>A</h2>
+</td>
+</tr>
+
+
+<tr class="vespers-antiphon">
+<!-- PROPER, NEED TO SEMIDOUBLE IF NEEDED -->
+<td valign=top><h2>A</h2>NTIPHONA
+</td>
+
+<td valign=top><h2></h2>
+</td>
+</tr>
+
+
+<tr class="vespers-psalm-one">
+<td valign=top><h2>Q</h2>uare
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="vespers-psalm-two">
+<td valign=top><h2>Q</h2>uare
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="vespers-psalm-three">
+<td valign=top><h2>Q</h2>uare
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="magnificat">
+<td valign=top><h2>M</h2>agnifiat anima mea
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="vespers-antiphon">
+<!-- PROPER -->
+<td valign=top><h2>A</h2>NTIPHONA
+</td>
+
+<td valign=top><h2></h2>
+</td>
+</tr>
+
+
+<tr class="oratio">
+<td valign=top><h2>Oratio</h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="final-antiphon">
+<!-- PROPER TO SEASON -->
+<td valign=top><h2>S</h2>ub tuum
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+</table>
+
+<br><h2 id="compline">Ad Completorium</h2>
+
+<table border="1" cellpadding="8">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+
+
+<tr>
+<td valign=top><h2>Incipit</h2>
+<!-- FIXED -->
+<br><h2>P</h2>ater noster
+<br><h2>A</h2>ve María
+<br><h2>C</h2>onverte nos
+<br><h2>D</h2>eus in adjutórium
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="alleluia">
+<!-- CHANGE IN LENT -->
+<td valign=top><h2>A</h2>lleluia.
+</td>
+
+<td valign=top><h2>A</h2>lleluia.
+</td>
+</tr>
+
+
+<tr class="compline-hymn">
+<!-- NOT IN TRIDUUM -->
+<td valign=top><h2>T</h2>e lucis
+</td>
+
+<td valign=top><h2>A</h2>
+</td>
+</tr>
+
+
+<tr class="compline-antiphon">
+<!-- CHANGE DAILY, AS IN PSALTER, ALWAYS SEMIDOUBLED -->
+<td valign=top><h2>A</h2>NTIPHONA
+</td>
+
+<td valign=top><h2></h2>
+</td>
+</tr>
+
+
+<tr class="compline-psalm-one">
+<td valign=top><h2>Q</h2>uare
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="compline-psalm-two">
+<td valign=top><h2>Q</h2>uare
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="compline-psalm-three">
+<td valign=top><h2>Q</h2>uare
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="nunc">
+<td valign=top><h2>N</h2>unc dimittis
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="compline-antiphon">
+<!-- CHANGE DAILY, AS IN PSALTER -->
+<td valign=top><h2>A</h2>NTIPHONA
+</td>
+
+<td valign=top><h2></h2>
+</td>
+</tr>
+
+
+<tr class="compline-oratio">
+<td valign=top><h2>Oratio</h2>
+<br><h2>V</h2>isita
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="final-antiphon">
+<!-- DOUBLE CHECK -->
+<td valign=top><h2>S</h2>alve
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+</table>
+
+
+<table>
+	<colgroup>
+	<col style="width: 50%" />
+	<col style="width: 50%" />
+	</colgroup>
+
+    <tbody id="dataBody">
+        <!-- Data will be populated here -->
+    </tbody>
+</table>
+
+<table border="1" cellpadding="8">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tr>
+<td valign=top><h2>Breviarium Gothicum</h2>
+<br><h2>M</h2>iserére mei, Deus, secúndum magnam misericórdiam tuam: * et secúndum multitúdinem miseratiónum tuárum dele iniquitátes meas.
+<br>Usquequáque laba me ab injustítia mea: * et a peccáto meo munda me.
+<br>Quóniam iniquitátem meam ego agnósco: * et peccátum meum contra me est semper.
+<br>Tibi soli peccábi, et malum coram te feci: * ut justificéris in sermónibus tuis, et vincas dum judicáris.
+<br>Ecce enim in iniquitátibus concéptus sum: * et in peccátis péperit me mater mea.
+<br>Ecce enim veritátem dilexsísti: * incérta et occúlta sapiéntiæ tuæ manifestásti mihi.
+<br>Adspárges me ysópo, et mundábor: * labábis me, et supra nibem dealbábor.
+<br>Audítui meo dabis gáudium, et lætítiam: * et exultábunt ossa humiliáta.
+<br>Avérte fáciem tuam a peccátis meis: * et omnes iniquitátes meas dele.
+<br>Cor mundum crea in me, Deus, * spíritum rectum ínnoba in viscéribus meis.
+<br>Ne proícias me a fácie tua: * spíritum sanctum tuum ne áuferas a me.
+<br>Redde mihi lætítiam salutáris tui: * spíritu principáli confírma me.
+<br>Docéam inícos vias tuas: * et ímpii ad te converténtur.
+<br>Líbera me de sanguínibus, Deus, Deus salútis meæ : * laudábit lingua mea justítias tuas.
+<br>Dómine, lábia mea apéries: * et os meum adnuntiábit laudem tuam.
+<br>Quóniam, si voluísses sacrifícium dedíssem útique: * holocáustis vero non delectáberis.
+<br>Sacrifícium Deo spíritus contribulátus: * cor contrítum, et humiliátum Deus non spernet.
+<br>Benígne fac, Dómine, in bona voluntáte tua Sion: * ut ædificéntur muri Jerúsalem.
+<br>Tunc acceptábis sacrifícium justítiæ, oblatiónes, et holocáusta: * tunc impónes super altáre tuum vítulos.
+</td>
+
+<td valign=top><h2>Missa gothica</h2>
+<br><h2>M</h2>iserére mei, Deus, * secúndum magnam Misericórdiam tuam.
+<br>Et secúndum multitúdinem miseratiónum tuárum * dele iniquitátes meas.
+<br>Usquequáque laba me Dómine ab injustítia mea, * et a peccáto meo munda me.
+<br>Quóniam iniquitátes meas ego agnósco, * et peccátum meum contra me est semper.
+<br>Tibi soli peccávi, et malum coram te feci, * ut justificéris in sermónibus tuis, et vincas dum judicáris.
+<br>Ecce enim in iniquitátibus concéptus sum, * et in delíctis péperit me Mater mea.
+<br>Ecce enim veritátem dilexísti: * Incérta et occúlta Sapiéntiæ tuæ manifestásti mihi.
+<br>Aspérges me Dómine hyssópo, et mundábor: * lavábis me, et supra nivem dealbábor.
+<br>Audítui meo dabis gáudium, et lætítiam: * et exultábunt ossa humiliáta.
+<br>Avérte fáciem tuam a peccátis meis, * et omnes iniquitátes meas dele.
+<br>Cor mundum crea in me, Deus, * Spíritum rectum ínnova in viscéribus meis.
+<br>Ne projícias me a fácie tua, * Spíritum Sanctum tuum ne áuferas a me.
+<br>Redde mihi lætítiam salutáris tui, * Spíritu principáli confírma me.
+<br>Docéam iníquos vias tuas, * et ímpii ad te converténtur.
+<br>Líbera me de Sanguínibus, Deus, Deus salútis meæ , * exultábit lingua mea Justítias tuas.
+<br>Dómine, lábia mea apéries, * et os meum annuntiábit laudem tuam.
+<br>Quóniam, si voluísses sacrifícium dedíssem útique, * holocáustis vero non delectáberis.
+<br>Sacrifícium Deo Spíritus contribulátus, * Cor contrítum, et humiliátum Deus non spernit.
+<br>Benígne fac, Dómine, in bona voluntáte tua Sion, * ut ædificéntur muri Jerúsalem.
+<br>Tunc acceptábis sacrifícium Justítiæ, oblatiónes, et holocáusta, * tunc impónes super Altáre tuum vítulos.
+</td>
+</tr>
+</table>
+
+<div style="margin-top: 20px;">
+	<button id="toggleStylesheetButton" class="glass-button">Toggle Light/Dark</button>
+</div>
+<script type="module" src="script.js"></script>
+<script type="module">
+    import { loadData } from './script.js';
+
+    document.getElementById('datePicker').addEventListener('change', loadData);
+</script>
+<script>
+	function openNav() {
+		document.getElementById("mySidebar").style.width = "30%";
+		document.getElementById("openbtn").style.display = "none";
+		document.getElementById("mySidebar").style.border = "2px solid rgba(255, 255, 255, 0.5)";
+	}
+
+	function closeNav() {
+		document.getElementById("mySidebar").style.width = "0";
+		document.getElementById("openbtn").style.display = "inline";
+		document.getElementById("mySidebar").style.border = "none";
+	}
+</script>
+
+<br><a>Psalmi Pœnitentiáles</a><br>
+<br><a>Defunctorum</a><br>
+<br><a href=..>Index</a></center>
+</body></html>
