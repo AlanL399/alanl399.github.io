@@ -11,15 +11,30 @@
 <h1 style="font-style:normal;"><b>Quignones Online</b></h1>
 <h2>Mockup Only</h2>
 
+<div id="floating-navbar" class="floating-navbar">
+    <div class="navbar-content">
+        <button class="openbtn" onclick="openNav()">☰ Navigation</button>
+        <div class="date-selector">
+            <label for="datePicker">Select a Date:</label>
+            <input type="date" id="datePicker" class="glass-button">
+        </div>
+		<h3 class="feast-name-rank">De Festo Sancte Nomine, Simplex</h3>
+		<!-- <h3 class="feast-rank">Simplex</h3> -->
+    </div>
+</div>
+
+
+<!-- <br><button class="openbtn" id="openbtn" onclick="openNav()">☰ Navigation</button>   -->
+
 <div style="margin: 20px; font-size: 20px !important">
 	<label for="fontSizeSlider">Font Size</label>
 	<input type="range" id="fontSizeSlider" min="10" max="72" value="18" step="1">
 	<button id="resetFontButton" class="glass-button">Reset</button>
 </div>
 
-<h3 style="color: white">Select a Date</h3>
-<input type="date" id="datePicker" onchange="loadData()" class="glass-button">
 
+<!-- <label for="datePicker">Select a Date:</label> -->
+<!-- <input type="date" id="datePicker" class="glass-button"> -->
 
 <div id="mySidebar" class="sidebar">
 	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
@@ -33,11 +48,9 @@
 	<a href="#compline">Ad Completorium</a>
 </div>
 
-<br><button class="openbtn" id="openbtn" onclick="openNav()">☰ Navigation</button>  
+<!-- I will try to use modern typography where possible and accents. The Clementine Vulgate will be used. -->
 
-
-
-<br><h2 id="matins">Ad Matutinum</h2>
+<h2 id="matins">Ad Matutinum</h2>
 
 <table border="1" cellpadding="8">
 <colgroup>
@@ -45,28 +58,55 @@
 <col style="width: 50%" />
 </colgroup>
 
-<tr>
+<tr class="ante">
+<td>Ante Officium</td>
+
+<td>Before the Office</td>
+</tr>
+
+
+<tr class="incipit">
 <td valign=top><h2>Incipit</h2>
 <!-- FIXED -->
-<br><h2>P</h2>ater
-<br><h2>A</h2>ve María
-<br><h2>C</h2>onfíteor
-<br><h2>M</h2>isereátur
-<br><h2>I</h2>ndulgéntium
-<br><h2>D</h2>ómine labia
-<br><h2>D</h2>eus in adjutórium
+<br><h2>P</h2>ater noster, qui es in cælis, sanctificétur nomen tuum: advéniat regnum tuum: fiat volúntas tua, sicut in cælo et in terra. Panem nostrum quotidiánum da nobis hódie: et dimítte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris: et ne nos indúcas in tentatiónem: sed líbera nos a malo. Amen.
+<br><h2>A</h2>ve María, grátia plena; Dóminus tecum: benedícta tu in muliéribus, et benedíctus fructus ventris tui Jesus. Sancta María, Mater Dei, ora pro nobis peccatóribus. Amen.
+<br><h2>C</h2>onfíteor Deo omnipoténti, beátæ Maríæ semper Vírgini, beáto Michaéli Archángelo, beáto Joánni Baptístæ, sanctis Apóstolis Petro et Paulo, et ómnibus Sanctis, quia peccávi nimis, cogitatióne, verbo et ópere: mea culpa, mea culpa, mea máxima culpa. Ídeo precor beátam Maríam semper Vírginem, beátum Michaélem Archángelum, beátum Joánnem Baptístam, sanctos Apóstolos Petrum et Paulum, et omnes Sanctos, oráre pro me ad Dóminum Deum nostrum.
+<!-- <h5 style="color: #EEE">et tibi pater</h5> -->
+<br><h2>M</h2>isereátur nostri omnípotens Deus, et dimíssis peccátis nostris, perdúcat nos ad vitam ætérnam.
+<br><h3>℟.</h3> Amen.
+<br><h2>I</h2>ndulgéntium, absolutiónem et remissiónem peccatórum nostrórum tríbuat nobis omnípotens et miséricors Dóminus.
+<br><h3>℟.</h3> Amen.
+<br><h2>D</h2>ómine labia, lábia mea apéries.
+<br><h3>℟.</h3> Et os meum annuntiábit laudem tuam.
+<br><h3>℣.</h3> Deus in adjutórium meum inténde.
+<br><h3>℟.</h3> Dómine, ad adjuvándum me festína.
+<br><h2>G</h2>lória Patri, et Fílio, et Spirítui Sancto.
+<br>Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum.
+<br>Amen.
 </td>
 
-<td valign=top><h2></h2>
-<br><h2></h2>
-<br><h2></h2>
+<td valign=top><h2>Start</h2>
+<br><h2>O</h2>ur Father, who art in heaven, hallowed be thy name. Thy kingdom come. Thy will be done on earth as it is in heaven. Give us this day our daily bread. And forgive us our trespasses, as we forgive those who trespass against us. And lead us not into temptation. But deliver us from evil. Amen.
+<br><h2>H</h2>ail Mary full of grace. The Lord be with thee, Blessed are thou amongst women, and blessed is the fruit of thy womb Jesus. Holy Mary mother of God, Pray for us sinners. Amen.
+<br><h2>I</h2> confess to almighty God, to blessed Mary ever Virgin, to blessed Michael the Archangel, to blessed John the Baptist, to the holy Apostles Peter and Paul, and to all the Saints, that I have sinned exceedingly in thought, word and deed: through my fault, through my fault, through my most grievous fault. Therefore I beseech blessed Mary ever Virgin, blessed Michael the Archangel, blessed John the Baptist, the holy Apostles Peter and Paul, and all the Saints, to pray for me to the Lord our God.
+<br><h2>M</h2>ay almighty God have mercy on us, forgive us our sins, and bring us to everlasting life.
+<br><h3>℟.</h3> Amen.
+<br><h2>M</h2>ay the almighty and merciful Lord grant us pardon, absolution and remission of our sins.
+<br><h3>℟.</h3> Amen.
+<br><h2>O</h2> Lord thou wilt open my lips.
+<br><h3>℟.</h3> And my mouth shall declare thy praise.
+<br><h3>℣.</h3> O God come to my assistance.
+<br><h3>℟.</h3> O Lord make haste to help me.
+<br><h2>G</h2>lory be to the Father, and to the Son, and to the Holy Ghost.
+<br>As it was in the beginning, is now, and ever shall be, world without end.
+<br>Amen.
 </td>
 </tr>
 
 
 <tr class="alleluia">
 <!-- CHANGE IN LENT -->
-<td valign=top><h2>A</h2>lleluia.
+<td valign=top><h2>A</h2>llelúia.
 </td>
 
 <td valign=top><h2>A</h2>lleluia.
@@ -77,28 +117,35 @@
 <tr class="invitatory">
 <td valign=top><h2>Invitatórium</h2>
 <br><h2>A</h2>NTIPHONA
-<br><h3>Si uno, semel dícitur. Si a duóbus, replicátur.</h3>
+<br><h5>Si uno, semel dícitur. Si a duóbus, replicátur.</h5>
 </td>
 
-<td valign=top><h2></h2>
-<br><h3></h3>
-<br><h2></h2>
+<td valign=top><h2>Invitatory</h2>
+<br><h2>A</h2>NTIPHON
+<br><h5>The Invitatory is said once if by one person. If by two, it is repeated.</h5>
 </td>
 </tr>
 
 
 <tr class="">
 <td valign=top>
-<h2>V</h2>eníte, exultemus
-<br><h2></h2>
-<br><h2></h2>
-<br><h2></h2>
+<h2>V</h2>eníte, exsultémus Dómino, jubilémus Deo, salutári nostro: præoccupémus fáciem ejus in confessióne, et in psalmis jubilémus ei.
+<br>Quóniam Deus magnus Dóminus, et Rex magnus super omnes deos, quóniam non repéllet Dóminus plebem suam: quia in manu ejus sunt omnes fines terræ, et altitúdines móntium ipse cónspicit.
+<br>Quóniam ipsíus est mare, et ipse fecit illud, et áridam fundavérunt manus ejus veníte, adorémus, et procidámus ante Deum: plorémus coram Dómino, qui fecit nos, quia ipse est Dóminus, Deus noster; nos autem pópulus ejus, et oves páscuæ ejus.
+<br>Hódie, si vocem ejus audiéritis, nolíte obduráre corda vestra, sicut in exacerbatióne secúndum diem tentatiónis in desérto: ubi tentavérunt me patres vestri, probavérunt et vidérunt ópera mea.
+<br>Quadragínta annis próximus fui generatióni huic, et dixi; Semper hi errant corde, ipsi vero non cognovérunt vias meas: quibus jurávi in ira mea; Si introíbunt in réquiem meam.
+<br>Glória Patri, et Fílio, et Spirítui Sancto.
+<br>Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen.
 </td>
 
 <td valign=top>
-<h2></h2>
-<br><h2></h2>
-<br><h2></h2>
+<h2>C</h2>ome let us praise the Lord with joy: let us joyfully sing to God our saviour, let us come before his presence with thanksgiving and make a joyful noise to him with psalms
+<br>For the Lord is a great God, and a great King above all gods: for the Lord will not cast off his people, for in his hand are all the ends of the earth, and the heights of the mountains are his.
+<br>For the sea is his, and he made it: and his hands formed the dry land: cme let us adore, and fall down and weep before the Lord that made us: for he is the Lord our God, and we are the people of his pasture and the sheep of his hand.
+<br>Today if you shall hear his voice harden not your hearts, as in the provocation according to the day of temptation in the wilderness: where your fathers tempted me: they proved me and saw my works.
+<br>Forty years long was I offended with that generation, and I said, These always err in heart tese men have not known my ways, so I swore in my wrath that they shall not enter into my rest.
+<br>Glory be to the Father, and to the Son, and to the Holy Ghost.
+<br>As it was in the beginning, is now, and ever shall be, world without end. Amen.
 <br><h2></h2>
 </td>
 </tr>
@@ -106,12 +153,13 @@
 
 <tr class="invitatory">
 <td valign=top>
-<h3>Repétitur Invitatórium</h3>
+<h5>Repétitur Invitatórium</h5>
 <br><h2>A</h2>NTIPHONA
 </td>
 
-<td valign=top><h2></h2>
-<br><h2></h2>
+<td valign=top>
+<h5>Repeat the Invitatory.</h5>
+<br><h2>A</h2>NTIPHON
 </td>
 </tr>
 
@@ -124,7 +172,7 @@
 <br><h2></h2>
 </td>
 
-<td valign=top><h2></h2>
+<td valign=top><h2>Hymn</h2>
 <br><h2></h2>
 <br><h2></h2>
 <br><h2></h2>
@@ -145,49 +193,34 @@
 
 
 <tr class="matins-psalm-one">
-<td valign=top><h2>B</h2>eatus
-<br><h2></h2>
-<br><h2></h2>
-<br><h2></h2>
-<br><h2></h2>
+<td valign=top><h2>Psalmus 1.</h2>
+<br>Beátus vir. Error.
 </td>
 
-<td valign=top><h2></h2>
-<br><h2></h2>
-<br><h2></h2>
-<br><h2></h2>
+<td valign=top><h2>Psalm 1.</h2>
+<br>Blessed is the man.
 </td>
 </tr>
 
 
 <tr class="matins-psalm-two">
-<td valign=top><h2>Q</h2>uare
-<br><h2></h2>
-<br><h2></h2>
-<br><h2></h2>
-<br><h2></h2>
+<td valign=top><h2>Psalmus 9.</h2>
+<br>Confitébor tibi.
 </td>
 
-<td valign=top><h2></h2>
-<br><h2></h2>
-<br><h2></h2>
-<br><h2></h2>
+<td valign=top><h2>Psalm 9.</h2>
+<br>I will give praise to thee.
 </td>
 </tr>
 
 
 <tr class="matins-psalm-three">
-<td valign=top><h2>D</h2>ómine quid
-<br><h2></h2>
-<br><h2></h2>
-<br><h2></h2>
-<br><h2></h2>
+<td valign=top><h2>Psalmus 17.</h2>
+<br>Díligam te, Dómine, fortitúdo mea.
 </td>
 
-<td valign=top><h2></h2>
-<br><h2></h2>
-<br><h2></h2>
-<br><h2></h2>
+<td valign=top><h2>Psalm 17.</h2>
+<br>I will love thee, O Lord, my strength.
 </td>
 </tr>
 
@@ -204,6 +237,31 @@
 </tr>
 
 
+<tr class="">
+<td valign=top><h2>P</h2>ater noster, qui es in cælis, sanctificétur nomen tuum: advéniat regnum tuum: fiat volúntas tua, sicut in cælo et in terra. Panem nostrum quotidiánum da nobis hódie: et dimítte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris: et ne nos indúcas in tentatiónem: sed líbera nos a malo. Amen.
+</td>
+
+<td valign=top><h2>O</h2>ur Father, who art in heaven, hallowed be thy name. Thy kingdom come. Thy will be done on earth as it is in heaven. Give us this day our daily bread. And forgive us our trespasses, as we forgive those who trespass against us. And lead us not into temptation. But deliver us from evil. Amen.
+</td>
+</tr>
+
+
+<tr class="matins-blessing-one">
+<!-- OMIT DURING TRIDUUM -->
+<td valign=top><h2>Benedictio</h2>
+<br></nt><h3>℣.</h3> Jube, dómine, benedícere.
+<br>Deus Pater omnípotens sit nobis propítius et clemens.
+<br><h3>℟.</h3> Amen.
+</td>
+
+<td valign=top><h2>Blessing</h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
 <tr class="matins-lesson-one">
 <td valign=top><h2>Lectio Prima</h2>
 <br><h2></h2>
@@ -213,6 +271,34 @@
 </td>
 
 <td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="tu-autum">
+<td valign=top>
+Tu autem, Dómine, miserére nostri.
+<br><h3>℟.</h3> Deo grátias.
+</td>
+
+<td valign=top>But thou, O Lord, have mercy upon us.
+<br><h3>℟.</h3> Thanks be to God.
+</td>
+</tr>
+
+
+<tr class="matins-blessing-two">
+<!-- OMIT DURING TRIDUUM -->
+<td valign=top><h2>Benedictio</h2>
+<br></nt><h3>℣.</h3> Jube, dómine, benedícere.
+<br>Unigénitus Dei Fílius nos benedícere et adjuváre dignétur.
+<br><h3>℟.</h3> Amen.
+</td>
+
+<td valign=top><h2>Blessing</h2>
 <br><h2></h2>
 <br><h2></h2>
 <br><h2></h2>
@@ -236,6 +322,36 @@
 </tr>
 
 
+<tr class="tu-autum">
+<td valign=top>
+Tu autem, Dómine, miserére nostri.
+<br><h3>℟.</h3> Deo grátias.
+</td>
+
+<td valign=top>But thou, O Lord, have mercy upon us.
+<br><h3>℟.</h3> Thanks be to God.
+</td>
+</tr>
+
+
+<tr class="matins-blessing-three">
+<!-- OMIT DURING TRIDUUM, ALSO VARIABLE -->
+<td valign=top><h2>Benedictio</h2>
+<br></nt><h3>℣.</h3> Jube, dómine, benedícere.
+<br>Spíritus Sancti grátia illúminet sensus et corda nostra.
+<br>Cujus festum
+<br>Per Virginem
+<br><h3>℟.</h3> Amen.
+</td>
+
+<td valign=top><h2>Blessing</h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
 <tr class="matins-lesson-three">
 <td valign=top><h2>Lectio Tertia</h2>
 <br><h2></h2>
@@ -252,19 +368,83 @@
 </tr>
 
 
-<tr class="tedeum">
-<!-- CONTROLS TE DEUM; ON FOR FEASTS -->
-<td valign=top><h2>T</h2>e Deum
-<br><h2></h2>
-<br><h2></h2>
-<br><h2></h2>
-<br><h2></h2>
+<tr class="tu-autum">
+<td valign=top>
+Tu autem, Dómine, miserére nostri.
+<br><h3>℟.</h3> Deo grátias.
 </td>
 
-<td valign=top><h2></h2>
-<br><h2></h2>
-<br><h2></h2>
-<br><h2></h2>
+<td valign=top>But thou, O Lord, have mercy upon us.
+<br><h3>℟.</h3> Thanks be to God.
+</td>
+</tr>
+
+
+<tr class="tedeum">
+<!-- CONTROLS TE DEUM; ON FOR FEASTS. IN LENT, IT IS PSALM 50 -->
+<td valign=top><h2>Te Deum</h2>
+<br><h2>T</h2>e Deum laudámus: te Dóminum confitémur.
+<br>Te ætérnum Patrem omnis terra venerátur.
+<br>Tibi omnes Ángeli, tibi Cæli, et univérsæ Potestátes:
+<br>Tibi Chérubim et Séraphim incessábili voce proclámant:
+<br>Sanctus, Sanctus, Sanctus Dóminus Deus Sábaoth.
+<br>Pleni sunt cæli et terra majestátis glóriæ tuæ.
+<br>Te gloriósus Apostolórum chorus,
+<br>Te Prophetárum laudábilis númerus,
+<br>Te Mártyrum candidátus laudat exércitus.
+<br>Te per orbem terrárum sancta confitétur Ecclésia,
+<br>Patrem imménsæ majestátis;
+<br>Venerándum tuum verum et únicum Fílium;
+<br>Sanctum quoque Paráclitum Spíritum.
+<br>Tu Rex glóriæ, Christe.
+<br>Tu Patris sempitérnus es Fílius.
+<br>Tu, ad liberándum susceptúrus hóminem: non horruísti Vírginis úterum.
+<br>Tu, devícto mortis acúleo, aperuísti credéntibus regna cælórum.
+<br>Tu ad déxteram Dei sedes, in glória Patris.
+<br>Judex créderis esse ventúrus.
+<br>Sequens versus dicitur flexis genibus
+<br>Te ergo quǽsumus, tuis fámulis súbveni, quos pretióso sánguine redemísti.
+<br>Ætérna fac cum Sanctis tuis in glória munerári.
+<br>Salvum fac pópulum tuum, Dómine, et bénedic hereditáti tuæ.
+<br>Et rege eos, et extólle illos usque in ætérnum.
+<br>Per síngulos dies benedícimus te.
+<br>Et laudámus nomen tuum in sǽculum, et in sǽculum sǽculi.
+<br>Dignáre, Dómine, die isto sine peccáto nos custodíre.
+<br>Miserére nostri, Dómine, miserére nostri.
+<br>Fiat misericórdia tua, Dómine, super nos, quemádmodum sperávimus in te.
+<br>In te, Dómine, sperávi: non confúndar in ætérnum.
+</td>
+
+<td valign=top><h2>We Praise Thee</h2>
+<br><h2>W</h2>e praise thee, O God, we acknowledge thee to be the Lord.
+<br>All the earth doth worship thee, the Father everlasting.
+<br>To thee all Angels cry aloud, the Heavens, and all the Powers therein.
+<br>To thee Cherubim and Seraphim continually do cry.
+<br>bow head Holy, Holy, Holy Lord God of Sabaoth;
+<br>Heaven and earth are full of the Majesty of thy glory.
+<br>The glorious company of the Apostles praise thee.
+<br>The goodly fellowship of the Prophets praise thee.
+<br>The noble army of Martyrs praise thee.
+<br>The holy Church throughout all the world doth acknowledge thee;
+<br>The Father, of an infinite Majesty.
+<br>Thine honourable, true, and only Son;
+<br>Also the Holy Ghost, the Comforter.
+<br>Thou art the King of Glory, O Christ.
+<br>Thou art the everlasting Son of the Father.
+<br>When thou tookest upon thee to deliver man, thou didst not abhor the Virgin's womb.
+<br>When thou hadst overcome the sharpness of death, thou didst open the Kingdom of Heaven to all believers.
+<br>Thou sittest at the right hand of God, in the glory of the Father.
+<br>We believe that thou shalt come to be our Judge.
+<br>We therefore pray thee, help thy servants, whom thou hast redeemed with thy precious Blood.
+<br>Make them to be numbered with thy Saints, in glory everlasting.
+<br>O Lord, save thy people, and bless thine heritage.
+<br>Govern them, and lift them up for ever.
+<br>Day by day we magnify thee;
+<br>And we worship thy Name ever, world without end.
+<br>Vouchsafe, O Lord, to keep us this day without sin.
+<br>O Lord, have mercy upon us, have mercy upon us.
+<br>O Lord, let thy mercy lighten upon us, as our trust is in thee.
+<br>O Lord, in thee have I trusted, let me never be confounded.
 </td>
 </tr>
 
@@ -279,22 +459,29 @@
 </colgroup>
 
 
-<tr>
+<tr class="incipit">
 <td valign=top><h2>Incipit</h2>
 <!-- FIXED -->
-<br><h2>D</h2>eus in adjutórium
+<br><h3>℣.</h3> Deus in adjutórium meum inténde.
+<br><h3>℟.</h3> Dómine, ad adjuvándum me festína.
+<br><h2>G</h2>lória Patri, et Fílio, et Spirítui Sancto.
+<br>Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum.
+<br>Amen.
 </td>
 
-<td valign=top><h2></h2>
-<br><h2></h2>
-<br><h2></h2>
+<td valign=top><h2>Start</h2>
+<br><h3>℣.</h3> O God come to my assistance.
+<br><h3>℟.</h3> O Lord make haste to help me.
+<br><h2>G</h2>lory be to the Father, and to the Son, and to the Holy Ghost.
+<br>As it was in the beginning, is now, and ever shall be, world without end.
+<br>Amen.
 </td>
 </tr>
 
 
 <tr class="alleluia">
 <!-- CHANGE IN LENT -->
-<td valign=top><h2>A</h2>lleluia.
+<td valign=top><h2>A</h2>llelúia.
 </td>
 
 <td valign=top><h2>A</h2>lleluia.
@@ -307,24 +494,22 @@
 <td valign=top><h2>A</h2>NTIPHONA
 </td>
 
-<td valign=top><h2></h2>
+<td valign=top><h2>A</h2>NTIPHON
 </td>
 </tr>
 
 
 <tr class="lauds-psalm-one">
-<td valign=top><h2>Q</h2>uare
-<br><h2></h2>
-<br><h2></h2>
-<br><h2></h2>
-<br><h2></h2>
+<td valign=top><h2>Psalmus 65.</h2>
+<br>
+<br>Glória Patri, et Fílio, et Spirítui Sancto.
+<br>Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen.
 </td>
 
-<td valign=top><h2></h2>
-<br><h2></h2>
-<br><h2></h2>
-<br><h2></h2>
-<br><h2></h2>
+<td valign=top><h2>Psalm 65.</h2>
+<br>
+<br>Glory be to the Father, and to the Son, and to the Holy Ghost.
+<br>As it was in the beginning, is now, and ever shall be, world without end. Amen.
 </td>
 
 
@@ -404,7 +589,8 @@
 </tr>
 
 
-<tr class="final-antiphon">
+<!-- <tr class="final-antiphon"> -->
+<tr class="commemorations">
 <!-- PROPER TO SEASON -->
 <td valign=top><h2>S</h2>ub tuum
 <br><h2></h2>
@@ -418,6 +604,29 @@
 <br><h2></h2>
 <br><h2></h2>
 </td>
+</tr>
+
+
+<tr class="explicit">
+<td valign=top><h2>S</h2>ub tuum
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+
+<td valign=top><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+<br><h2></h2>
+</td>
+</tr>
+
+
+<tr class="post">
+<td>Post Officium</td>
+
+<td>After the Office</td>
 </tr>
 
 </table>
@@ -1354,48 +1563,48 @@
 </colgroup>
 <tr>
 <td valign=top><h2>Breviarium Gothicum</h2>
-<br><h2>M</h2>iserére mei, Deus, secúndum magnam misericórdiam tuam: * et secúndum multitúdinem miseratiónum tuárum dele iniquitátes meas.
-<br>Usquequáque laba me ab injustítia mea: * et a peccáto meo munda me.
-<br>Quóniam iniquitátem meam ego agnósco: * et peccátum meum contra me est semper.
-<br>Tibi soli peccábi, et malum coram te feci: * ut justificéris in sermónibus tuis, et vincas dum judicáris.
-<br>Ecce enim in iniquitátibus concéptus sum: * et in peccátis péperit me mater mea.
-<br>Ecce enim veritátem dilexsísti: * incérta et occúlta sapiéntiæ tuæ manifestásti mihi.
-<br>Adspárges me ysópo, et mundábor: * labábis me, et supra nibem dealbábor.
-<br>Audítui meo dabis gáudium, et lætítiam: * et exultábunt ossa humiliáta.
-<br>Avérte fáciem tuam a peccátis meis: * et omnes iniquitátes meas dele.
-<br>Cor mundum crea in me, Deus, * spíritum rectum ínnoba in viscéribus meis.
-<br>Ne proícias me a fácie tua: * spíritum sanctum tuum ne áuferas a me.
-<br>Redde mihi lætítiam salutáris tui: * spíritu principáli confírma me.
-<br>Docéam inícos vias tuas: * et ímpii ad te converténtur.
-<br>Líbera me de sanguínibus, Deus, Deus salútis meæ : * laudábit lingua mea justítias tuas.
-<br>Dómine, lábia mea apéries: * et os meum adnuntiábit laudem tuam.
-<br>Quóniam, si voluísses sacrifícium dedíssem útique: * holocáustis vero non delectáberis.
-<br>Sacrifícium Deo spíritus contribulátus: * cor contrítum, et humiliátum Deus non spernet.
-<br>Benígne fac, Dómine, in bona voluntáte tua Sion: * ut ædificéntur muri Jerúsalem.
-<br>Tunc acceptábis sacrifícium justítiæ, oblatiónes, et holocáusta: * tunc impónes super altáre tuum vítulos.
+<br><h2>M</h2>iserére mei, Deus, secúndum magnam misericórdiam tuam:et secúndum multitúdinem miseratiónum tuárum dele iniquitátes meas.
+<br>Usquequáque laba me ab injustítia mea:et a peccáto meo munda me.
+<br>Quóniam iniquitátem meam ego agnósco:et peccátum meum contra me est semper.
+<br>Tibi soli peccábi, et malum coram te feci:ut justificéris in sermónibus tuis, et vincas dum judicáris.
+<br>Ecce enim in iniquitátibus concéptus sum:et in peccátis péperit me mater mea.
+<br>Ecce enim veritátem dilexsísti:incérta et occúlta sapiéntiæ tuæ manifestásti mihi.
+<br>Adspárges me ysópo, et mundábor:labábis me, et supra nibem dealbábor.
+<br>Audítui meo dabis gáudium, et lætítiam:et exultábunt ossa humiliáta.
+<br>Avérte fáciem tuam a peccátis meis:et omnes iniquitátes meas dele.
+<br>Cor mundum crea in me, Deus,spíritum rectum ínnoba in viscéribus meis.
+<br>Ne proícias me a fácie tua:spíritum sanctum tuum ne áuferas a me.
+<br>Redde mihi lætítiam salutáris tui:spíritu principáli confírma me.
+<br>Docéam inícos vias tuas:et ímpii ad te converténtur.
+<br>Líbera me de sanguínibus, Deus, Deus salútis meæ :laudábit lingua mea justítias tuas.
+<br>Dómine, lábia mea apéries:et os meum adnuntiábit laudem tuam.
+<br>Quóniam, si voluísses sacrifícium dedíssem útique:holocáustis vero non delectáberis.
+<br>Sacrifícium Deo spíritus contribulátus:cor contrítum, et humiliátum Deus non spernet.
+<br>Benígne fac, Dómine, in bona voluntáte tua Sion:ut ædificéntur muri Jerúsalem.
+<br>Tunc acceptábis sacrifícium justítiæ, oblatiónes, et holocáusta:tunc impónes super altáre tuum vítulos.
 </td>
 
 <td valign=top><h2>Missa gothica</h2>
-<br><h2>M</h2>iserére mei, Deus, * secúndum magnam Misericórdiam tuam.
-<br>Et secúndum multitúdinem miseratiónum tuárum * dele iniquitátes meas.
-<br>Usquequáque laba me Dómine ab injustítia mea, * et a peccáto meo munda me.
-<br>Quóniam iniquitátes meas ego agnósco, * et peccátum meum contra me est semper.
-<br>Tibi soli peccávi, et malum coram te feci, * ut justificéris in sermónibus tuis, et vincas dum judicáris.
-<br>Ecce enim in iniquitátibus concéptus sum, * et in delíctis péperit me Mater mea.
-<br>Ecce enim veritátem dilexísti: * Incérta et occúlta Sapiéntiæ tuæ manifestásti mihi.
-<br>Aspérges me Dómine hyssópo, et mundábor: * lavábis me, et supra nivem dealbábor.
-<br>Audítui meo dabis gáudium, et lætítiam: * et exultábunt ossa humiliáta.
-<br>Avérte fáciem tuam a peccátis meis, * et omnes iniquitátes meas dele.
-<br>Cor mundum crea in me, Deus, * Spíritum rectum ínnova in viscéribus meis.
-<br>Ne projícias me a fácie tua, * Spíritum Sanctum tuum ne áuferas a me.
-<br>Redde mihi lætítiam salutáris tui, * Spíritu principáli confírma me.
-<br>Docéam iníquos vias tuas, * et ímpii ad te converténtur.
-<br>Líbera me de Sanguínibus, Deus, Deus salútis meæ , * exultábit lingua mea Justítias tuas.
-<br>Dómine, lábia mea apéries, * et os meum annuntiábit laudem tuam.
-<br>Quóniam, si voluísses sacrifícium dedíssem útique, * holocáustis vero non delectáberis.
-<br>Sacrifícium Deo Spíritus contribulátus, * Cor contrítum, et humiliátum Deus non spernit.
-<br>Benígne fac, Dómine, in bona voluntáte tua Sion, * ut ædificéntur muri Jerúsalem.
-<br>Tunc acceptábis sacrifícium Justítiæ, oblatiónes, et holocáusta, * tunc impónes super Altáre tuum vítulos.
+<br><h2>M</h2>iserére mei, Deus,secúndum magnam Misericórdiam tuam.
+<br>Et secúndum multitúdinem miseratiónum tuárumdele iniquitátes meas.
+<br>Usquequáque laba me Dómine ab injustítia mea,et a peccáto meo munda me.
+<br>Quóniam iniquitátes meas ego agnósco,et peccátum meum contra me est semper.
+<br>Tibi soli peccávi, et malum coram te feci,ut justificéris in sermónibus tuis, et vincas dum judicáris.
+<br>Ecce enim in iniquitátibus concéptus sum,et in delíctis péperit me Mater mea.
+<br>Ecce enim veritátem dilexísti:Incérta et occúlta Sapiéntiæ tuæ manifestásti mihi.
+<br>Aspérges me Dómine hyssópo, et mundábor:lavábis me, et supra nivem dealbábor.
+<br>Audítui meo dabis gáudium, et lætítiam:et exultábunt ossa humiliáta.
+<br>Avérte fáciem tuam a peccátis meis,et omnes iniquitátes meas dele.
+<br>Cor mundum crea in me, Deus,Spíritum rectum ínnova in viscéribus meis.
+<br>Ne projícias me a fácie tua,Spíritum Sanctum tuum ne áuferas a me.
+<br>Redde mihi lætítiam salutáris tui,Spíritu principáli confírma me.
+<br>Docéam iníquos vias tuas,et ímpii ad te converténtur.
+<br>Líbera me de Sanguínibus, Deus, Deus salútis meæ ,exultábit lingua mea Justítias tuas.
+<br>Dómine, lábia mea apéries,et os meum annuntiábit laudem tuam.
+<br>Quóniam, si voluísses sacrifícium dedíssem útique,holocáustis vero non delectáberis.
+<br>Sacrifícium Deo Spíritus contribulátus,Cor contrítum, et humiliátum Deus non spernit.
+<br>Benígne fac, Dómine, in bona voluntáte tua Sion,ut ædificéntur muri Jerúsalem.
+<br>Tunc acceptábis sacrifícium Justítiæ, oblatiónes, et holocáusta,tunc impónes super Altáre tuum vítulos.
 </td>
 </tr>
 </table>
@@ -1404,24 +1613,19 @@
 	<button id="toggleStylesheetButton" class="glass-button">Toggle Light/Dark</button>
 </div>
 <script type="module" src="script.js"></script>
-<script type="module">
-    import { loadData } from './script.js';
+<!-- <script> -->
+	<!-- function openNav() { -->
+		<!-- document.getElementById("mySidebar").style.width = "30%"; -->
+		<!-- document.getElementById("openbtn").style.display = "none"; -->
+		<!-- document.getElementById("mySidebar").style.border = "2px solid rgba(255, 255, 255, 0.5)"; -->
+	<!-- } -->
 
-    document.getElementById('datePicker').addEventListener('change', loadData);
-</script>
-<script>
-	function openNav() {
-		document.getElementById("mySidebar").style.width = "30%";
-		document.getElementById("openbtn").style.display = "none";
-		document.getElementById("mySidebar").style.border = "2px solid rgba(255, 255, 255, 0.5)";
-	}
-
-	function closeNav() {
-		document.getElementById("mySidebar").style.width = "0";
-		document.getElementById("openbtn").style.display = "inline";
-		document.getElementById("mySidebar").style.border = "none";
-	}
-</script>
+	<!-- function closeNav() { -->
+		<!-- document.getElementById("mySidebar").style.width = "0"; -->
+		<!-- document.getElementById("openbtn").style.display = "inline"; -->
+		<!-- document.getElementById("mySidebar").style.border = "none"; -->
+	<!-- } -->
+<!-- </script> -->
 
 <br><a>Psalmi Pœnitentiáles</a><br>
 <br><a>Defunctorum</a><br>

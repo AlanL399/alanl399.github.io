@@ -1,0 +1,172 @@
+body {
+    font-size: 1.25em;
+	background-color:#EEE;
+    padding-top: 85px; /* Space for fixed navbar */
+
+}
+
+td {
+	background-color:#FFF;
+}
+
+/* Typography */
+h1 {
+    font-style: italic;
+    font-size: 2.25em;
+    font-weight: normal;
+    margin: .1em; /* Small margin all around */
+    margin-top: 0;
+    position: relative;
+    z-index: 1; /* Ensures it's above other content but below navbar */
+}
+
+h1.black {
+    color: #000;
+    font-style: italic;
+    display: inline;
+    font-weight: normal;
+    font-size: 2em;
+}
+
+h2 {
+    color: red; /* Original color commented out */
+    display: inline;
+    font-weight: bold;
+    font-size: 1.8em;
+    font-style: italic;
+}
+
+h3 {
+    /* color: Maroon; */ /* Original color commented out */
+    display: inline;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 1em;
+}
+
+h5 {
+    /* color: Maroon; */ /* Original color commented out */
+    display: inline;
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Navigation Elements */
+.floating-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 75px;
+    background: #EEE;
+    border-bottom: 2px solid #EEE;
+    z-index: 1000; /* Ensures navbar stays on top */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow: horizontal vertical blur spread */
+}
+
+.floating-navbar::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0px;
+    right: 0px;
+    height: 1px;
+    background: rgba(128, 128, 128, 1);
+}
+
+.navbar-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* This will help distribute the elements */
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px; /* Add padding on both sides */
+}
+
+.feast-name-rank {
+    margin-left: auto; /* This will push it to the right */
+    padding-right: 25px; /* Add some space from the right edge */
+}
+
+/* Date Selector within Navbar */
+.date-selector {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Centers the element */
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between label and input */
+}
+
+.date-selector input[type="date"] {
+    background: #FFF;
+    border: 1px solid #000;
+    color: black;
+    padding: 5px 10px; /* top/bottom left/right padding */
+}
+
+.date-selector label {
+    color: black;
+}
+
+/* Sidebar Navigation */
+.sidebar {
+    /* height: 100%; */ /* Full height option commented out */
+    width: 0; /* Start with width of 0 for sliding effect */
+    position: fixed;
+    z-index: 1; /* Ensure it's on top of other content */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center in viewport */
+    overflow-x: hidden; /* Hide horizontal overflow */
+
+    padding-top: 60px;
+    
+
+    background: #EEE;
+
+}
+
+/* Button Styles */
+.glass-button, .openbtn {
+
+    
+    border: 2px solid black;
+
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    position: relative; /* Required for absolute positioning of pseudo-elements */
+    overflow: hidden; /* Ensures contents stay within the boundaries */
+
+
+}
+
+/* Specific Navigation Button Styles */
+.openbtn {
+    font-size: 20px;
+    padding: 15px; /* Equal padding all around */
+    /* padding: 10px 15px; */ /* Alternative padding top/bottom left/right */
+    z-index: 2;
+    background: #FFF;
+    border: 1px solid #000;
+}
+
+/* Sidebar Links */
+.sidebar a {
+    padding: 8px 8px 8px 32px; /* top right bottom left */
+    font-size: 25px;
+    display: block;
+}
+
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px; /* Distance from right edge */
+    font-size: 36px;
+}
+
+/* Utility Classes */
+#fontSizeSlider {
+    width: 31.25em;
+}
