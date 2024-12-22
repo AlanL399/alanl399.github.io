@@ -11,82 +11,76 @@ const rows = document.querySelectorAll(".row1, .row2");
 const stylesheetLink = document.getElementById("stylesheetLink");
 const toggleStylesheetButton = document.getElementById("toggleStylesheetButton");
 const resetFontButton = document.getElementById("resetFontButton");
-const lightStylesheet = "_gothic_styles.css";
-const darkStylesheet = "_gothic_styles_dark.css";
-const cardsStylesheet = "_gothic_styles_cards.css";
+
+// Stylesheet configuration
+const stylesheets = ['_gothic_styles.css', '_gothic_styles_dark.css', '_gothic_styles_cards.css'];
+const isSubPage = window.location.pathname.split('/').length > 3; // Check if we're in a subfolder
+const stylesheetPrefix = isSubPage ? '../' : '';
 
 // Function to apply the font size
 function applyFontSize(size) {
-	const scaleFactor = parseInt(size, 10) - 18;
-	bodyElement.style.fontSize = `${size}px`;
-	h3Elements.forEach((h3) => {
-		h3.style.fontSize = `${size}px`;
-	});
-	h2Elements.forEach((h2) => {
-		h2.style.fontSize = `${24 + 2 * scaleFactor}px`;
-	});
-	h5Elements.forEach((h5) => {
-		h5.style.fontSize = `${12 + 2 * scaleFactor}px`;
-	});
+    const scaleFactor = parseInt(size, 10) - 18;
+    bodyElement.style.fontSize = `${size}px`;
+    h3Elements.forEach((h3) => {
+        h3.style.fontSize = `${size}px`;
+    });
+    h2Elements.forEach((h2) => {
+        h2.style.fontSize = `${24 + 2 * scaleFactor}px`;
+    });
+    h5Elements.forEach((h5) => {
+        h5.style.fontSize = `${12 + 2 * scaleFactor}px`;
+    });
 }
-// function applyFontSize(size) {
-	// const scaleFactor = parseFloat(size) / 18; // Convert to em units
-	// bodyElement.style.fontSize = `${size}px`;
-	// h3Elements.forEach((h3) => {
-		// h3.style.fontSize = `${size}px`;
-	// });
-	// h2Elements.forEach((h2) => {
-		// h2.style.fontSize = `${.333 + scaleFactor}em`;
-	// });
-	// h5Elements.forEach((h5) => {
-		// h5.style.fontSize = `${-.333 + scaleFactor}em`;
-	// });
-// }
 
 // Function to handle slider input
 function handleSliderInput() {
-	const newSize = fontSizeSlider.value;
-	setCookie("fontSize", newSize, 365); // Store the font size in a cookie for 1 year
-	applyFontSize(newSize);
+    const newSize = fontSizeSlider.value;
+    setCookie("fontSize", newSize, 365);
+    applyFontSize(newSize);
 }
 
 // Function to reset font size
 function resetFontSize() {
-	const newSize = 18;
-	setCookie("fontSize", newSize, 365);
-	applyFontSize(newSize);
-	fontSizeSlider.value = newSize;
+    const newSize = 18;
+    setCookie("fontSize", newSize, 365);
+    applyFontSize(newSize);
+    fontSizeSlider.value = newSize;
 }
 
-// Check if the font size is stored in a cookie
-const storedFontSize = getCookie("fontSize");
-if (storedFontSize) {
-	fontSizeSlider.value = storedFontSize;
-	applyFontSize(storedFontSize);
+// Get current stylesheet name without path
+function getCurrentStylesheetName() {
+    const href = stylesheetLink.href;
+    return href.substring(href.lastIndexOf('/') + 1);
 }
 
-// function toggleStylesheet() {
-  // const activeStylesheet = stylesheetLink.href.includes(lightStylesheet) ? darkStylesheet : lightStylesheet;
-  // setStylesheet(activeStylesheet);
-// }
-const stylesheets = [lightStylesheet, darkStylesheet, cardsStylesheet];
-let currentIndex = stylesheets.indexOf(stylesheetLink.href);
+// Initialize current index based on actual stylesheet name
+let currentIndex = stylesheets.indexOf(getCurrentStylesheetName());
+if (currentIndex === -1) currentIndex = 0; // Default to first stylesheet if not found
 
 function toggleStylesheet() {
-	currentIndex = (currentIndex + 1) % stylesheets.length;
-	const activeStylesheet = stylesheets[currentIndex];
-	setStylesheet(activeStylesheet);
+    currentIndex = (currentIndex + 1) % stylesheets.length;
+    const stylesheet = stylesheets[currentIndex];
+    setStylesheet(stylesheet);
 }
 
-// Function to set the active stylesheet and store it in a cookie for 1 year
 function setStylesheet(stylesheet) {
-  stylesheetLink.href = stylesheet;
-  setCookie("activeStylesheetVariable", stylesheet, 365);
+    const fullPath = stylesheetPrefix + stylesheet;
+    stylesheetLink.href = fullPath;
+    setCookie("activeStylesheetVariable", stylesheet, 365);
 }
 
-// Check if the active stylesheet variable is stored in a cookie and apply it
-if (getCookie("activeStylesheetVariable") === lightStylesheet || getCookie("activeStylesheetVariable") === darkStylesheet || getCookie("activeStylesheetVariable") === cardsStylesheet) {
-  setStylesheet(getCookie("activeStylesheetVariable"));
+// Initialize stylesheet from cookie
+const storedStylesheet = getCookie("activeStylesheetVariable");
+if (stylesheets.includes(storedStylesheet)) {
+    setStylesheet(storedStylesheet);
+    currentIndex = stylesheets.indexOf(storedStylesheet);
+}
+
+// Initialize font size from cookie
+const storedFontSize = getCookie("fontSize");
+if (storedFontSize) {
+    fontSizeSlider.value = storedFontSize;
+    applyFontSize(storedFontSize);
 }
 
 // Event listeners
@@ -94,9 +88,11 @@ fontSizeSlider.addEventListener("input", handleSliderInput);
 toggleStylesheetButton.addEventListener("click", toggleStylesheet);
 resetFontButton.addEventListener("click", resetFontSize);
 
-// Function to toggle psalms display
+// Toggle psalms function
 export function togglePsalms() {
-	rows.forEach((row) => {
-		row.style.display = (row.style.display === "none") ? "table-row" : "none";
-	});
+    if (rows) {
+        rows.forEach((row) => {
+            row.style.display = (row.style.display === "none") ? "table-row" : "none";
+        });
+    }
 }
