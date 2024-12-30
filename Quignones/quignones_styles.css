@@ -56,9 +56,24 @@ td {
     border: 2px solid rgba(255, 255, 255, 0.5); /* Border with transparency */
     position: relative; /* For pseudo-element positioning */
     overflow: hidden; /* Keeps children within bounds */
+}
 
-    /* Alternative gradient background */
-    /* background: linear-gradient(45deg, #FF9933, #FF6F61); */
+td::before {
+	content: ''; /* Empty pseudo-element */
+	position: absolute; /* Positioned relative to the parent */
+	top: 0px;
+	/* top: -50px; */
+	bottom: 0px;
+	/* bottom: -50px; */
+	/* left: 0px; */
+	left: -80px;
+	/* right: 0px; */
+	right: 0px;
+	background: linear-gradient(-45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.0)); /* Gradient effect for shine */
+	opacity: 0.6; /* Slight transparency */
+	transform: rotate(45deg); /* Rotate the gradient for a diagonal shine */
+	pointer-events: none; /* Prevent interactions with this pseudo-element */
+	/* width: 100%; */
 }
 
 /* Typography */
@@ -156,9 +171,9 @@ h5 {
 }
 
 .date-selector input[type="date"] {
-    background: rgba(255, 255, 255, 0.1);
+    /* background: rgba(255, 255, 255, 0.1); */
     border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 4px;
+    /* border-radius: 4px; */
     color: white;
     padding: 5px 10px; /* top/bottom left/right padding */
 }
@@ -193,7 +208,7 @@ h5 {
 .glass-button, .openbtn {
     /* font-family: "Lato", sans-serif; */ /* Alternative font */
     /* padding: 30px 40px; */ /* Alternative larger padding */
-    /* padding: .5em 1em; */ /* Alternative relative padding */
+    padding: .5em 1em; /* Alternative relative padding */
     /* font-size: 60px; */ /* Alternative larger font size */
     
     color: #FFFFFF; /* text color */
@@ -216,7 +231,7 @@ h5 {
     /* transition: background 1.6s ease, transform 1.6s ease, opacity 1.6s ease; */
 
     /* Box-shadow components:
-       - First value: outer glow (horizontal vertical blur spread color)
+       - First value: outer glow (horizontal vertical blur spread color, radius)
        - Second value: inner glow (inset horizontal vertical blur color) */
     box-shadow: 0 6px 20px rgba(0, 0, 255, 0.4),
                 inset 2px 2px 8px rgba(255, 255, 255, 0.9);

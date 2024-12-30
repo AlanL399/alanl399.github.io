@@ -37,7 +37,7 @@ h2 {
 }
 
 h3 {
-    /* color: Maroon; */ /* Original color commented out */
+    color: red;
     display: inline;
     font-weight: normal;
     font-style: italic;
@@ -131,7 +131,8 @@ h5 {
 /* Button Styles */
 .glass-button, .openbtn {
 
-    
+    background: #FFF;
+    padding: .5em 1em; /* Alternative relative padding */
     border: 2px solid black;
 
     cursor: pointer; /* Changes cursor to pointer on hover */
@@ -147,7 +148,6 @@ h5 {
     padding: 15px; /* Equal padding all around */
     /* padding: 10px 15px; */ /* Alternative padding top/bottom left/right */
     z-index: 2;
-    background: #FFF;
     border: 1px solid #000;
 }
 
