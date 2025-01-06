@@ -9,6 +9,10 @@ td {
 	background-color:#FFF;
 }
 
+table {
+	width: 100%;
+}
+
 /* Typography */
 h1 {
     font-style: italic;

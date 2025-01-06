@@ -97,11 +97,15 @@ h1.black {
 }
 
 h2 {
-    /* color: #FFF; */ /* Original color commented out */
+    /* color: #FEE; */ /* Original color commented out */
     display: inline;
     font-weight: bold;
     font-size: 1.8em;
     font-style: italic;
+}
+
+td h2 {
+	text-shadow: 0px 0px 15px rgba(255,0,0,.8);
 }
 
 h3 {
@@ -110,6 +114,8 @@ h3 {
     font-weight: normal;
     font-style: italic;
     font-size: 1em;
+    /* color: #FEE; */
+	text-shadow: 0px 0px 15px rgba(255,0,0,1);
 }
 
 h5 {
@@ -117,6 +123,8 @@ h5 {
     display: inline;
     font-weight: normal;
     font-style: italic;
+    /* color: #FEE; */
+	text-shadow: 0px 0px 15px rgba(255,0,0,1);
 }
 
 /* Navigation Elements */

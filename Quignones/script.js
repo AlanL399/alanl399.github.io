@@ -125,6 +125,22 @@ function appendGloria(content, isColumn1) {
 	return content + (isColumn1 ? gloriaPatri.latin : gloriaPatri.english);
 }
 
+function processAntiphon(antiphonString) {
+	if (!antiphonString) return { ante: '', post: '' };
+
+	const parts = antiphonString.split('*');
+	if (parts.length !== 2) return { ante: antiphonString, post: antiphonString };
+
+	let ante = parts[0].trim();
+	// Remove comma if it's the last character and add period
+	ante = ante.endsWith(',') ? ante.slice(0, -1) + '.' : ante + '.';
+
+	// Full antiphon without the * and following space
+	const post = parts.join('').replace('* ', '');
+
+	return { ante, post };
+}
+
 async function loadPsalmsForDate(date) {
 	try {
 		const adjustedDate = new Date(date);
@@ -151,6 +167,38 @@ async function loadPsalmsForDate(date) {
 						updatePsalmContent(row, dayData[psalmKey], shouldSkipGloria);
 					}
 				});
+			}
+		});
+
+		// Handle antiphons for minor hours
+		const hours = ['prime', 'terce', 'sext', 'none'];
+		hours.forEach(hour => {
+			const antiphonKey = `${hour}-antiphon`;
+			if (dayData[antiphonKey]) {
+				// Process Latin column
+				const latinAntiphon = processAntiphon(dayData[antiphonKey].column1);
+				// Process English column
+				const englishAntiphon = processAntiphon(dayData[antiphonKey].column2);
+				
+				// Update ante elements
+				const anteRow = document.querySelector(`.${hour}-antiphon-ante`);
+				if (anteRow) {
+					const columns = anteRow.getElementsByTagName('td');
+					if (columns.length === 2) {
+						columns[0].innerHTML = `<h3>Ant.</h3> ${latinAntiphon.ante}`;
+						columns[1].innerHTML = `<h3>Ant.</h3> ${englishAntiphon.ante}`;
+					}
+				}
+				
+				// Update post elements
+				const postRow = document.querySelector(`.${hour}-antiphon-post`);
+				if (postRow) {
+					const columns = postRow.getElementsByTagName('td');
+					if (columns.length === 2) {
+						columns[0].innerHTML = `<h3>Ant.</h3> ${latinAntiphon.post}`;
+						columns[1].innerHTML = `<h3>Ant.</h3> ${englishAntiphon.post}`;
+					}
+				}
 			}
 		});
 
