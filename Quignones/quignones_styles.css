@@ -14,7 +14,9 @@ body {
     color: #FFF;
     
     /* Current gradient - Inner to Outer */
-    background: linear-gradient(#005,#8D2FA2,#00D4FF,#76A9FF,#00D4FF,#8D2FA2);
+    /* background: linear-gradient(#005,#8D2FA2,#00D4FF,#76A9FF,#00D4FF,#8D2FA2); */
+    background: url(pattern.png) , linear-gradient(#005,#8D2FA2,#00D4FF,#76A9FF,#00D4FF,#8D2FA2);
+
     
     /* Alternative background options */
     /* background: radial-gradient(#76A9ff,#CFC,#EEE); */ /* Radial gradient option */
@@ -24,10 +26,12 @@ body {
     /* Windows Live, more white */
     
     /* Text shadow: horizontal vertical blur color */
-    text-shadow: 3px 3px 5px rgba(0,0,0,.8);
+    text-shadow: 2px 2px 3px rgba(0,0,0,.9);
     padding-top: 85px; /* Space for fixed navbar */
 
     /* Alternative background image option */
+    /* background-image: url(stretch.png); */
+    /* background-image: url(pattern.png); */
     /* background-image: url(aero/cell.jpg); */
     /* background-size: cover; */ /* Makes image cover entire background */
     /* background-position: center; */ /* Centers the image */
@@ -49,7 +53,8 @@ td {
     border-radius: 1em;
     
     /* Glass effect components */
-    background: rgba(255, 255, 255, 0.05); /* Semi-transparent background */
+    /* background: rgba(255, 255, 255, 0.05); */ /* Semi-transparent background */
+    background: rgba(0, 255, 0, 0.05); /* Semi-transparent background */
     box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.2), /* Outer shadow: horizontal vertical blur spread */
                 inset 2px 2px 8px rgba(255, 255, 255, 0.1); /* Inner glow */
     backdrop-filter: blur(10px); /* Blurred background effect */
