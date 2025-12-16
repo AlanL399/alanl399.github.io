@@ -1,15 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Inter&display=swap');
-table, td {
-	border:1px solid black;
-	border-collapse: collapse;
-	/* font-size:22px; */
-}
-body.index {
-	background-color:#DDD;
-	font-family:Segoe UI;
-	margin:10%;
-	margin-top:0px;
-}
 body.ptero {
 	font-family: 'Inter', sans-serif;
 	margin:15%;
@@ -37,7 +26,38 @@ p.number {
 	font-weight:bold;
 
 }
-table.index, td.index{
+table, td {
+	border:1px solid black;
+	border-collapse: collapse;
+	/* font-size:22px; */
+}
+body.index {
+	background-color:#DDD;
+    /* background: radial-gradient(#76A9ff,#CFC,#EEE,#F22); */ /* Radial gradient option */
+    /* background: linear-gradient(18deg, #000000, #00D4FF); */ /* Embedded style */
+    /* background: linear-gradient(0deg, #FFFFFF, #00D4FF); */ /* Windows Live */
+    /* background: linear-gradient(0deg, rgba(255,255,255,1) 78%, rgba(0,212,255,1) 100%); */
+	/* background-color:#EEF3FA; */
+	font-family:Segoe UI;
+	margin:10%;
+	margin-top:0px;
+}
+h1.index, h2.index, h3.index {
+	text-align:center;
+	font-family:Segoe UI Variable Display;
+	font-weight:normal;
+
+}
+h1.index {
+	font-size:50px;
+}
+h2.index {
+	font-size:30px;
+}
+h3.index {
+	font-size:20px;
+}
+table.index {
 	border:6px ridge white;
 /* dotted      */
 /* dashed      */
@@ -53,8 +73,43 @@ table.index, td.index{
 	margin-right:auto;
 	border-collapse:separate;
 	border-radius: 10px;
+    /* border: 0em !important; */
+    /* border-collapse: separate !important; */
+    /* border-spacing: 1em; */ /* Space between cells */
+    /* margin: 0em; */
+    /* width: 100%; */
+}
+td.index{
+	border:6px ridge white;
+/* dotted      */
+/* dashed      */
+/* solid      */
+/* double      */
+/* groove      */
+/* ridge      */
+/* inset      */
+/* outset      */
+/* none      */
+/* hidden */
+	margin-left:auto;
+	margin-right:auto;
+	border-collapse:separate;
+	border-radius: 10px;
+    padding: .5em 1.25em;
+    border-radius: 1em;
+    
+    /* Glass effect components */
+    /* background: rgba(255, 255, 255, 0.05); */ /* Semi-transparent background */
+    /* background: rgba(0, 255, 0, 0.05); */ /* Semi-transparent background */
+    /* box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), */ /* Outer shadow: horizontal vertical blur spread */
+                /* inset 2px 2px 8px rgba(255, 255, 255, 0.1); */ /* Inner glow */
+
+    /* border: 2px solid rgba(255, 255, 255, 0.5); */ /* Border with transparency */
+    /* position: relative; */ /* For pseudo-element positioning */
+    /* overflow: hidden; */ /* Keeps children within bounds */
 }
 ul { /* unordered list */
+	/* border:1px solid #A0AFC3; */
 	list-style-type:none;
 	margin:0px;
 	padding:0px;
@@ -63,22 +118,28 @@ ul { /* unordered list */
 }
 li { /* list item */
 	/* background-color:yellow; */
+	/* background: linear-gradient(to bottom, #EDF5FC 50%, #D8E5F2 50%); */
 	padding:5px;
 	/* width:90px; */
 	text-align:center;
+	/* float:center; */
 	float:left;
 }
-li a, .dropbtn {
+li a {
 	display: inline-block;
 	text-align: center;
 	padding:16px;
 }
 li:hover {
-	background-color: green;
+	/* background-color: green; */
 }
-li a:hover, .dropdown:hover .dropbtn {
+li.dropdown a:hover {
 	background-color: red;
 	display: block;
+	border-radius: 10px;
+	border: 3px groove green;
+	padding: 13px;
+	/* Adds to 16px */
 }
 li.dropdown {
 	display: inline-block;
@@ -101,11 +162,17 @@ li.dropdown {
 	text-align: left;
 }
 td a {
-	/* color: black; */
+	color: black;
 	padding:6px;
 	display: block;
 	/* text-align: left; */
+	font-size: 18px;
 }
 a:hover {
 	/* background-color: teal; */
+}
+footer {
+	margin-top:2em;
+	margin-bottom:2em;
+	margin-left:2em;
 }
